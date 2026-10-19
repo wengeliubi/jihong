@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="js gx" data-page-node-id="3c1QrC6s9ELMAFoXpBZpIz" style="scroll-behavior: smooth;"><head data-page-node-id="xJHoIA8sBNPiYova9dWw7v">
+<meta charset="utf-8" data-page-node-id="SEFceUmUeVZvgRKwQzXKzQ">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" data-page-node-id="uPAtUvOFobjR7nuNsOJM1A">
+<meta name="theme-color" content="#06301F" data-page-node-id="13ZWzusXsj78WCSxEWCCZB">
+<title data-page-node-id="9J6nkyxF4NduF5rePp0nqz">吉鸿农业 · 高新甘薯脱毒种苗</title>
+<meta name="description" content="吉鸿农业专注甘薯脱毒种苗繁育与供应：茎尖脱毒、生态大棚育苗、隔离扩繁、规模化供苗。" data-page-node-id="hAOmzZRNDGmSKyZLtTUWSZ">
+<!--
+  第二代视觉改版 · 主色：深翠绿
+  图位替换规则：覆盖 images/ 下同名文件即可，规格 1100×618（16:9）或 1100×825（4:3）
+-->
+<script data-page-node-id="JLqfH6R6yQ5gFW57mLiz9C">document.documentElement.className += ' js';</script>
+<style data-page-node-id="x3dQxgOmI3czCuY6xp2Q91">
+  /* ===================================================================
+     设计令牌 —— 深翠绿体系
+     =================================================================== */
+  :root{
+    --g950:#04241A;  --g900:#06301F;  --g800:#0A4A32;  --g700:#0F6B48;
+    --g600:#158B5C;  --g500:#1FA76E;  --g400:#45C68F;
+    --mint:#A7EBCB;  --g100:#E6F5EE;  --g50:#F3FBF7;
+    --ink:#0D1F17;   --ink2:#4A5F57;  --ink3:#8BA096;
+    --bg:#F3F8F5;    --card:#FFFFFF;  --line:#E4EEE8;
+    --r:20px;  --r-sm:14px;
+    --sh-1:0 2px 8px rgba(6,48,31,.05);
+    --sh-2:0 10px 28px rgba(6,48,31,.08);
+    --sh-3:0 18px 44px rgba(6,48,31,.15);
+    --ease:cubic-bezier(.22,1,.36,1);
+  }
+
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background:#DCE7E0; color:var(--ink); line-height:1.7;
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    overflow-x:clip;
+    padding-bottom:calc(92px + env(safe-area-inset-bottom));
+  }
+  ::selection{background:rgba(31,167,110,.22)}
+  .phone{max-width:440px;margin:0 auto;min-height:100vh;position:relative;
+    background:linear-gradient(180deg,
+      #04241A 0px,
+      #04241A 1620px,
+      #0F5238 1900px,
+      #5D9B7D 2350px,
+      #9BC5B1 3500px,
+      #C4DCCF 5400px,
+      #DEEBE4 6300px,
+      #EDF5F0 7219px,
+      var(--bg) 7479px,
+      var(--bg) 100%);
+    box-shadow:0 0 80px rgba(4,36,26,.20)}
+  @media(max-width:480px){.phone{box-shadow:none}body{background:var(--bg)}}
+  img{display:block;max-width:100%}
+
+  /* ===================================================================
+     HERO · 滚动展开（ScrollExpand 原生实现）
+     静止：82%×56% 圆角取景框 + 中央大标题 + 下划提示
+     下划：取景框展开至满屏，标题上浮淡出，副文案与标签淡入
+     =================================================================== */
+  .hs{position:relative;background:var(--g950)}
+  .hs-track{position:relative;width:100%;height:184vh}
+  .hs-stage{position:sticky;top:0;width:100%;height:100vh;height:100dvh;overflow:hidden;
+    background:radial-gradient(130% 62% at 50% -6%,#0C5338 0%,#04241A 66%)}
+
+  .hs-frame{position:absolute;inset:0;overflow:hidden;will-change:clip-path;
+    -webkit-clip-path:inset(22% 9% 22% 9% round 26px);
+    clip-path:inset(22% 9% 22% 9% round 26px)}
+  .hs-media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 55%;
+    transform:scale(1.16);transform-origin:center;
+    opacity:0;transition:opacity 1.1s ease;will-change:transform;pointer-events:none}
+  .hs-media.on{opacity:1}
+  .hs-veil{position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg,rgba(4,36,26,.62) 0%,rgba(4,36,26,.14) 34%,rgba(4,36,26,.20) 62%,rgba(4,36,26,.58) 100%)}
+  .hs-scrim{position:absolute;inset:0;pointer-events:none;opacity:0;
+    background:linear-gradient(to top,rgba(3,16,11,.90) 0%,rgba(3,16,11,.62) 24%,rgba(3,16,11,.14) 54%,rgba(3,16,11,.26) 100%)}
+
+  /* 开屏不露品牌：整块先透明，滑到中段才淡入 */
+  .hs-top{position:absolute;left:0;right:0;top:0;z-index:4;padding:28px 22px 0;
+    opacity:0;will-change:opacity,transform}
+  .hs-top .legal{margin-top:12px}
+
+  .hs-title{position:absolute;inset:0;z-index:3;display:flex;align-items:center;justify-content:center;
+    padding:0 24px;text-align:center;pointer-events:none;
+    font-size:clamp(22px,6.2vw,28px);font-weight:900;letter-spacing:.2px;line-height:1.45;
+    color:#fff;text-shadow:0 4px 26px rgba(0,0,0,.60);will-change:transform,opacity}
+  .hs-title em{font-style:normal;display:inline-block;color:#B9F0D4}
+  .hs-title span{display:block;max-width:100%}
+
+  .hs-hint{position:absolute;left:0;right:0;bottom:calc(22% - 66px);z-index:4;
+    display:flex;flex-direction:column;align-items:center;gap:7px;pointer-events:none;
+    font-size:10.5px;letter-spacing:2.4px;color:rgba(255,255,255,.62);will-change:transform,opacity}
+  .hs-hint::after{content:"";width:15px;height:15px;
+    border-right:1.5px solid rgba(255,255,255,.5);border-bottom:1.5px solid rgba(255,255,255,.5);
+    transform:rotate(45deg);animation:hsBob 1.9s ease-in-out infinite}
+  @keyframes hsBob{
+    0%,100%{transform:rotate(45deg) translate(0,0);opacity:.45}
+    50%{transform:rotate(45deg) translate(3px,3px);opacity:1}
+  }
+
+  .hs-overlay{position:absolute;left:0;right:0;bottom:0;z-index:4;padding:0 22px 96px;
+    opacity:0;will-change:opacity,transform}
+
+  /* 无 JS 降级：不展开，直接满帧显示 */
+  html:not(.js) .hs-track{height:auto}
+  html:not(.js) .hs-stage{position:relative;height:88svh}
+  html:not(.js) .hs-frame{clip-path:none;-webkit-clip-path:none}
+  html:not(.js) .hs-hint{display:none}
+  html:not(.js) .hs-overlay{opacity:1}
+  html:not(.js) .hs-top{opacity:1}
+  /* 无 JS：图册文字全部竖排展示，不依赖联动 */
+
+  /* 降低动效偏好 / 无动效环境：直接满屏静止，不做展开 */
+  @media (prefers-reduced-motion:reduce){
+    .hs-track{height:auto}
+    .hs-stage{position:relative;height:auto;overflow:visible}
+    .hs-frame{position:relative;inset:auto;height:76svh;-webkit-clip-path:none;clip-path:none}
+    .hs-media{opacity:1;transform:none;transition:none}
+    .hs-hint{display:none}
+    .hs-title{inset:auto;left:0;right:0;top:0;height:76svh}
+    .hs-top{opacity:1}
+    .hs-overlay{position:relative;opacity:1;padding:22px 22px 46px}
+  }
+
+  /* ---------- 品牌 / 文案通用 ---------- */
+  .brand{display:flex;align-items:center;gap:13px}
+  .mark{width:46px;height:46px;flex:0 0 46px;border-radius:14px;background:#fff;display:grid;place-items:center;
+    box-shadow:0 8px 22px rgba(0,0,0,.30)}
+  .mark img{width:32px;height:auto}
+  .bname{font-size:19px;font-weight:800;letter-spacing:.5px;line-height:1.25;color:#fff;
+    text-shadow:0 2px 12px rgba(0,0,0,.45)}
+  .ben{font-size:9px;letter-spacing:2.6px;color:rgba(255,255,255,.62);margin-top:4px;font-weight:700}
+
+  .legal{display:inline-flex;align-items:center;gap:7px;font-size:11px;color:rgba(255,255,255,.84);
+    letter-spacing:.2px;background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:5px 12px;
+    -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+  .legal::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--g400);
+    box-shadow:0 0 0 3px rgba(69,198,143,.24);flex:0 0 5px}
+
+  .sub{margin:0;font-size:13px;color:rgba(255,255,255,.88);line-height:1.9;
+    text-shadow:0 2px 12px rgba(0,0,0,.50);text-wrap:pretty}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .chip{font-size:11px;padding:5px 11px;border-radius:999px;color:#DCF7E8;letter-spacing:.2px;
+    background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.24);
+    -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+
+  /* ===================================================================
+     数据条
+     =================================================================== */
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);margin:18px 20px 0;background:var(--card);
+    border-radius:22px;box-shadow:var(--sh-3);padding:20px 4px;position:relative;z-index:3;
+    border:1px solid rgba(255,255,255,.65)}
+  .stat{text-align:center;position:relative;display:flex;flex-direction:column;justify-content:center;gap:6px}
+  .stat+.stat::before{content:"";position:absolute;left:0;top:12%;height:76%;width:1px;
+    background:linear-gradient(180deg,transparent,var(--line),transparent)}
+  .sv{font-size:22px;font-weight:900;color:var(--g800);letter-spacing:-.5px;
+    height:28px;line-height:28px;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .sv small{font-size:12px;font-weight:800;margin-left:1px}
+  .sl{font-size:10.5px;color:var(--ink3);white-space:nowrap;letter-spacing:.3px}
+
+  /* ===================================================================
+     板块标题
+     =================================================================== */
+  .sec{padding:34px 20px 0}
+  .sh{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+  .sh-num{flex:0 0 auto;font-size:10px;font-weight:800;letter-spacing:.5px;color:#fff;
+    background:linear-gradient(135deg,var(--g600),var(--g800));border-radius:8px;padding:3px 7px;
+    box-shadow:0 4px 10px rgba(10,74,50,.24);font-variant-numeric:tabular-nums}
+  .sh h2{margin:0;font-size:17.5px;font-weight:800;letter-spacing:.2px;white-space:nowrap}
+  .sh-rule{flex:1;height:1px;min-width:12px;
+    background:linear-gradient(90deg,rgba(15,107,72,.22) 0%,rgba(15,107,72,0) 100%)}
+  .sh-en{flex:0 0 auto;font-size:9.5px;color:var(--ink3);letter-spacing:1.6px;font-weight:800}
+
+  .body{font-size:14px;color:var(--ink2);line-height:2.0;margin:0;text-wrap:pretty}
+  .body+.body{margin-top:12px}
+  .body b{color:var(--g800);font-weight:700}
+
+  /* ===================================================================
+     图片位（含缺失占位）
+     =================================================================== */
+  .media{position:relative;border-radius:var(--r-sm);overflow:hidden;background:#E7EFEA;
+    box-shadow:var(--sh-1);cursor:zoom-in}
+  .media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s var(--ease)}
+  .media:hover img{transform:scale(1.04)}
+  .media[data-ratio="16/9"]{aspect-ratio:16/9}
+  .media[data-ratio="4/3"]{aspect-ratio:4/3}
+  .media[data-ratio="3/2"]{aspect-ratio:3/2}
+  .media[data-ratio="1/1"]{aspect-ratio:1/1}
+  .media.is-missing{cursor:default;box-shadow:none;
+    background:repeating-linear-gradient(45deg,#EDF3EF,#EDF3EF 10px,#E5EEE9 10px,#E5EEE9 20px);
+    border:1.5px dashed #B9C9BF}
+  .media.is-missing:hover img{transform:none}
+  .media.is-missing::after{content:attr(data-slot);position:absolute;inset:0;display:grid;place-items:center;
+    font-size:12px;font-weight:600;color:#7E9186;text-align:center;padding:12px;line-height:1.7;
+    white-space:pre-line}
+  .figcap{font-size:11.5px;color:var(--ink3);margin:9px 0 0;line-height:1.7;letter-spacing:.2px}
+
+  /* ===================================================================
+     卡片（基地 / 产品 / 六大理由）
+     =================================================================== */
+  .bases{display:flex;flex-direction:column;gap:16px}
+  .base-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+    box-shadow:var(--sh-2);overflow:hidden;transition:box-shadow .35s var(--ease),transform .35s var(--ease)}
+  .base-card:hover{box-shadow:var(--sh-3);transform:translateY(-2px)}
+  .base-card .media{border-radius:0;box-shadow:none}
+  .base-card .media:hover img{transform:scale(1.05)}
+
+  .card-idx{position:absolute;top:12px;left:12px;z-index:2;font-size:10px;font-weight:800;
+    letter-spacing:.8px;color:#fff;background:rgba(4,36,26,.42);
+    border:1px solid rgba(255,255,255,.32);border-radius:8px;padding:3px 7px;
+    -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);font-variant-numeric:tabular-nums}
+
+  .bc-tag{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:52px 16px 14px;
+    display:flex;align-items:center;gap:9px;color:#fff;font-size:16.5px;font-weight:800;
+    letter-spacing:.3px;text-shadow:0 2px 10px rgba(0,0,0,.50);
+    background:linear-gradient(to top,rgba(4,36,26,.82),rgba(4,36,26,.34) 52%,rgba(4,36,26,0))}
+  .bc-tag em{font-style:normal;font-size:10px;font-weight:700;letter-spacing:.3px;
+    color:#EAFBF2;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.42);
+    border-radius:999px;padding:2.5px 9px;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);
+    text-shadow:none;white-space:nowrap}
+
+  .bc-body{padding:15px 17px 18px}
+  .bc-lead{margin:0 0 8px;font-size:13px;font-weight:800;color:var(--g800);letter-spacing:.2px;line-height:1.7}
+  .bc-desc{margin:0;font-size:12.9px;color:var(--ink2);line-height:1.9}
+  .bc-list{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px}
+  .bc-list li{position:relative;padding-left:15px;font-size:12.7px;color:var(--ink2);line-height:1.85}
+  .bc-list li::before{content:"";position:absolute;left:2px;top:8px;width:5px;height:5px;
+    border-radius:50%;background:var(--g500)}
+  .bc-list b{color:var(--g800);font-weight:700}
+
+  .aud{margin-top:13px;padding-top:12px;border-top:1px dashed var(--line);
+    display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+  .aud .al{font-size:10.5px;color:var(--ink3);letter-spacing:.5px;flex:0 0 auto;margin-right:1px}
+  .aud .tag{font-size:11px;color:var(--g800);background:var(--g100);
+    border-radius:999px;padding:3.5px 10px;font-weight:700;letter-spacing:.2px}
+
+  /* ===================================================================
+     图文格
+     =================================================================== */
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+
+  /* ===================================================================
+     对比表
+     =================================================================== */
+  .vstbl{overflow:hidden;background:var(--card);border:1px solid var(--line);
+    border-radius:var(--r);box-shadow:var(--sh-2)}
+  .vshd,.vsrow{display:grid;grid-template-columns:72px 1fr 1fr;align-items:stretch}
+  .vshd{font-size:11px;font-weight:800;color:#fff;
+    background:linear-gradient(135deg,var(--g700),var(--g900))}
+  .vshd span{padding:11px 7px;text-align:center;letter-spacing:.3px}
+  .vshd span:first-child{text-align:left;padding-left:14px}
+  .vshd span:nth-child(2){background:rgba(255,255,255,.11)}
+  .vsrow{font-size:11.5px;border-top:1px solid var(--line);line-height:1.65}
+  .vsrow:nth-child(odd){background:#F7FBF8}
+  .vsrow .vk{padding:11px 0 11px 14px;font-weight:800;color:var(--ink2);font-size:11px;
+    display:flex;align-items:center}
+  .vsrow .vg{padding:11px 9px 11px 11px;color:var(--g800);font-weight:600;
+    background:rgba(31,167,110,.065)}
+  .vsrow .vt{padding:11px 9px 11px 11px;color:var(--ink2)}
+
+  /* ===================================================================
+     收益测算
+     =================================================================== */
+  .vsec{margin-top:14px;padding:17px 18px 18px;background:var(--card);
+    border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh-2)}
+  .vsec h3{font-size:13px;margin:0 0 14px;font-weight:800;color:var(--ink);
+    display:flex;align-items:center;gap:7px;line-height:1.6}
+  .vsec h3::before{content:"";width:3px;height:13px;border-radius:2px;flex:0 0 3px;
+    background:linear-gradient(var(--g500),var(--g700))}
+  .rchart{display:grid;grid-template-columns:54px 1fr 76px;align-items:center;gap:10px;font-size:12px}
+  .rchart+.rchart{margin-top:11px}
+  .rchart .rn{color:var(--ink3)}
+  .rchart .rb{height:22px;border-radius:7px;background:#EDF4F0;overflow:hidden}
+  .rchart .rb i{display:block;height:100%;border-radius:7px;background:#C3D2C9}
+  .rchart .rb i.best{background:linear-gradient(90deg,var(--g600),var(--g400));
+    box-shadow:0 4px 12px rgba(31,167,110,.34)}
+  .rchart .rv{color:var(--ink3);font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+  .profit{margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .profit>div{border-radius:14px;padding:13px 13px 14px;background:var(--g50);border:1px solid var(--line)}
+  .profit>div.hot{background:linear-gradient(140deg,var(--g700),var(--g500));
+    border-color:transparent;box-shadow:0 12px 28px rgba(15,107,72,.30);color:#fff}
+  .profit b{display:block;font-size:18px;font-weight:900;margin-top:4px;
+    font-variant-numeric:tabular-nums;letter-spacing:-.3px}
+  .profit small{display:block;font-size:10.5px;opacity:.82;margin-top:3px;line-height:1.55}
+  .profit .pk{font-size:11px;font-weight:700;opacity:.9}
+  .profit>div.hot b{color:#fff}
+  .note{font-size:11px;color:var(--ink3);margin:15px 0 0;line-height:1.8}
+
+  /* ===================================================================
+     相册横滑
+     =================================================================== */
+  .album{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;padding:2px 20px 12px;scrollbar-width:none}
+  .album::-webkit-scrollbar{display:none}
+  .album .media{flex:0 0 auto;width:70vw;max-width:310px;aspect-ratio:1/1;
+    border-radius:18px;scroll-snap-align:center;margin:0}
+  .album .media img{width:100%;height:100%;object-fit:cover}
+  .albhint{text-align:center;font-size:11px;color:var(--ink3);margin:2px 0 0;letter-spacing:.5px}
+
+  /* ===================================================================
+     分支单元（三大基地 / 产品种类）
+     每个分支 = 标题行 + 该分支自己的图册轮播 + 图册下方文字
+     =================================================================== */
+  .units{display:flex;flex-direction:column;gap:14px}
+  .unit{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+    box-shadow:var(--sh-2);padding:13px 13px 15px}
+
+  /* --- 分支标题行 --- */
+  .unit-hd{display:flex;align-items:center;gap:8px;margin:1px 0 11px}
+  .unit-no{flex:0 0 auto;font-size:9.5px;font-weight:800;letter-spacing:.8px;color:#fff;
+    background:var(--g700);border-radius:7px;padding:2.5px 6.5px;line-height:1.45;
+    font-variant-numeric:tabular-nums}
+  .unit-tt{flex:1 1 auto;margin:0;font-size:15px;font-weight:800;color:var(--ink);
+    letter-spacing:.2px;line-height:1.35}
+  .unit-pill{flex:0 0 auto;font-size:10px;font-weight:700;letter-spacing:.2px;white-space:nowrap;
+    color:var(--g800);background:var(--g100);border-radius:999px;padding:3px 8px}
+
+  /* --- 分支内图册（一屏一张，横滑切换） --- */
+  .unit .gal{position:relative}
+  .unit .gal-track{display:flex;gap:9px;overflow-x:auto;scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;padding:0;scrollbar-width:none}
+  .unit .gal-track::-webkit-scrollbar{display:none}
+  .unit .gal-slide{flex:0 0 100%;width:100%;position:relative;scroll-snap-align:start;
+    border-radius:13px;overflow:hidden;background:var(--g100)}
+  .unit .gal-slide .media{border-radius:13px;margin:0;box-shadow:none;background:#E7EFEA}
+  /* 缩略图不裁剪：完整显示整张照片，四周留白 */
+  .unit .gal-slide .media img{object-fit:contain}
+  .gal-idx{position:absolute;top:9px;left:9px;z-index:2;font-size:9.5px;font-weight:800;
+    letter-spacing:.5px;color:#fff;background:rgba(4,36,26,.44);
+    border:1px solid rgba(255,255,255,.30);border-radius:7px;padding:2px 6px;
+    -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+    font-variant-numeric:tabular-nums;pointer-events:none}
+  .gal-dots{display:flex;justify-content:center;align-items:center;gap:5px;margin-top:9px}
+  .gal-dot{width:5px;height:5px;border-radius:999px;background:rgba(10,74,50,.20);
+    transition:width .28s var(--ease),background .28s var(--ease)}
+  .gal-dot.on{width:16px;background:var(--g600)}
+  .gal-dots.is-single{display:none}
+
+  /* --- 图册下方文字 --- */
+  .unit-bd{margin-top:12px}
+  .unit-bd .bc-lead{margin:0 0 7px;font-size:12.8px;font-weight:800;color:var(--g800);
+    letter-spacing:.2px;line-height:1.7}
+  .unit-bd .bc-desc{margin:0;font-size:12.7px;color:var(--ink2);line-height:1.9}
+  .unit-bd .bc-list{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+  .unit-bd .bc-list li{position:relative;padding-left:14px;font-size:12.5px;color:var(--ink2);line-height:1.82}
+  .unit-bd .bc-list li::before{content:"";position:absolute;left:2px;top:8px;width:5px;height:5px;
+    border-radius:50%;background:var(--g500)}
+  .unit-bd .bc-list b{color:var(--g800);font-weight:700}
+  .unit-bd .aud{margin-top:11px;padding-top:11px;border-top:1px dashed var(--line);
+    display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+  .unit-bd .aud .al{font-size:10.5px;color:var(--ink3);letter-spacing:.5px;flex:0 0 auto;margin-right:1px}
+  .unit-bd .aud .tag{font-size:11px;color:var(--g800);background:var(--g100);
+    border-radius:999px;padding:3.5px 9px;font-weight:700;letter-spacing:.2px}
+  .gal-hint{text-align:center;font-size:11px;color:var(--ink3);margin:12px 0 0;letter-spacing:.5px}
+
+  /* ===================================================================
+     服务对象
+     =================================================================== */
+  .tags{display:flex;flex-wrap:wrap;gap:9px}
+  .tag{font-size:12.5px;padding:9px 14px;border-radius:11px;background:var(--card);
+    border:1px solid var(--line);color:var(--ink2);box-shadow:var(--sh-1)}
+  .area{margin-top:14px;font-size:13px;color:var(--ink2);display:flex;gap:9px;align-items:flex-start;
+    background:linear-gradient(135deg,var(--g100),var(--g50));border-radius:15px;padding:14px 15px;
+    border:1px solid rgba(31,167,110,.12);line-height:1.85}
+.area + .units{margin-top:14px}
+  .area svg{width:17px;height:17px;flex:0 0 17px;color:var(--g700);margin-top:4px}
+  .area b{color:var(--g800)}
+
+  /* ===================================================================
+     联系我们
+     =================================================================== */
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh-2)}
+  .card.about{padding:18px 18px 20px}
+  .card.about .sh{margin-bottom:14px}
+  .card.about .media{border-radius:14px;overflow:hidden}
+  .card.about .body:last-child{margin-bottom:0}
+  .contact{padding:2px 0;overflow:hidden}
+  .crow{display:flex;align-items:center;gap:13px;padding:15px 17px;text-decoration:none;color:inherit}
+  .crow+.crow{border-top:1px solid var(--line)}
+  .cic{width:38px;height:38px;flex:0 0 38px;border-radius:12px;display:grid;place-items:center;
+    background:linear-gradient(145deg,var(--g100),var(--g50));color:var(--g700);
+    border:1px solid rgba(31,167,110,.14)}
+  .cic svg{width:18px;height:18px;display:block}
+  .ctxt{flex:1;min-width:0}
+  .ck{font-size:11px;color:var(--ink3);letter-spacing:.3px}
+  .cv{font-size:14.5px;font-weight:700;letter-spacing:.2px;margin-top:1px;word-break:break-all}
+  .go{font-size:11.5px;color:var(--g700);font-weight:700;white-space:nowrap;
+    border:1px solid rgba(31,167,110,.24);background:var(--g50);border-radius:999px;padding:4px 11px}
+
+  /* ===================================================================
+     二维码
+     =================================================================== */
+  .qrwrap{margin:18px 20px 0;padding:12px;border-radius:22px;position:relative;overflow:hidden;
+    background:linear-gradient(140deg,var(--g800),var(--g950));
+    box-shadow:0 14px 34px rgba(4,36,26,.26)}
+  .qrwrap::after{content:"";position:absolute;width:190px;height:190px;right:-62px;top:-74px;
+    border-radius:50%;pointer-events:none;
+    background:radial-gradient(circle,rgba(69,198,143,.42),rgba(69,198,143,0) 70%)}
+  .qrdy{display:block;width:64%;max-width:240px;margin:0 auto;aspect-ratio:1/1;object-fit:cover;
+    border-radius:14px;position:relative;z-index:1;background:#fff;padding:6px}
+  .qrcap{position:relative;z-index:1;text-align:center;color:rgba(255,255,255,.80);
+    font-size:11px;letter-spacing:.6px;padding:12px 4px 3px;line-height:1.7}
+
+  footer{text-align:center;padding:30px 22px 26px;font-size:11px;color:var(--ink3);line-height:1.95}
+  footer img{width:112px;margin:0 auto 12px;opacity:.6}
+
+  /* ===================================================================
+     底部固定条
+     =================================================================== */
+  .bar-fix{position:fixed;left:0;right:0;bottom:0;z-index:50;
+    padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+    background:rgba(255,255,255,.92);
+    -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+    border-top:1px solid var(--line);box-shadow:0 -8px 26px rgba(6,48,31,.08)}
+  .bar-in{max-width:440px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .btn{display:flex;align-items:center;justify-content:center;gap:7px;height:48px;border-radius:15px;
+    font-size:14.5px;font-weight:800;text-decoration:none;border:1px solid transparent;
+    cursor:pointer;font-family:inherit;letter-spacing:.2px}
+  .btn svg{width:16px;height:16px}
+  .btn-main{background:linear-gradient(135deg,var(--g600),var(--g900));color:#fff;
+    box-shadow:0 8px 20px rgba(15,107,72,.32)}
+  .btn-ghost{background:#fff;color:var(--g800);border-color:rgba(31,167,110,.30)}
+
+  /* ===================================================================
+     灯箱 / 提示
+     =================================================================== */
+  .lb{position:fixed;inset:0;z-index:99;background:rgba(3,16,11,.95);display:none;
+    align-items:center;justify-content:center;padding:20px;
+    -webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+  .lb.on{display:flex}
+  .lb img{max-width:100%;max-height:calc(100% - 46px);border-radius:12px;object-fit:contain}
+  .lb .cap{position:absolute;left:0;right:0;bottom:26px;text-align:center;color:#DCE8E0;
+    font-size:12.5px;padding:0 24px}
+  .toast{position:fixed;left:50%;bottom:100px;transform:translate(-50%,12px);z-index:100;
+    background:rgba(13,31,23,.94);color:#fff;font-size:13px;padding:10px 18px;border-radius:999px;
+    opacity:0;transition:.28s;pointer-events:none}
+  .toast.on{opacity:1;transform:translate(-50%,0)}
+  .lb-x{position:absolute;top:16px;right:16px;z-index:2;width:38px;height:38px;border-radius:50%;
+    border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.10);color:#fff;
+    display:grid;place-items:center;cursor:pointer;-webkit-tap-highlight-color:transparent;
+    backdrop-filter:blur(6px)}
+  .lb-x:active{background:rgba(255,255,255,.20)}
+  .lb-x svg{width:18px;height:18px}
+  .lb img{cursor:default}
+
+  /* ===================================================================
+     入场动效（仅 JS 可用时启用，避免 JS 失效导致内容不可见）
+     =================================================================== */
+  .js .rise{opacity:0;transform:translateY(20px);
+    transition:opacity .8s var(--ease),transform .8s var(--ease)}
+  .js .rise.in{opacity:1;transform:none}
+
+  /* ===== GSAP 动效（html.gx 时接管；CDN 不可用则回退 .rise 淡入） ===== */
+  .gx .rise{opacity:1!important;transform:none!important;transition:none!important}
+  .gx .hs-title{overflow:hidden;padding:0 .08em}
+  .gx .media img{transition:none}
+  .boot{display:none}
+  .gx .boot{display:block;position:fixed;inset:0;z-index:90;background:var(--g950);pointer-events:none}
+  @media (prefers-reduced-motion:reduce){
+    .js .rise{opacity:1;transform:none;transition:none}
+    .media img,.base-card{transition:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+<style id="__dm_no_drag_style__" data-page-node-id="CrAmyu3dwODECjWTlTdAd7">* { -webkit-user-drag: none !important; }</style><style id="__dm_bindable_badge_style__" data-page-node-id="vdIbN25MEaEhBdzxmyPN8y">[data-sp-bindable="database"]{outline:1px dashed #0088ff;outline-offset:2px;border-radius:4px;}[data-sp-bindable="database"] *{pointer-events:none !important;transition:none !important;animation:none !important;}[data-sp-bindable="database"]{transition:none !important;animation:none !important;}</style></head>
+<body data-page-node-id="TizehPxLCjdHoMcHKRxF41" style="">
+<div class="boot" aria-hidden="true" style="opacity: 0; visibility: hidden; display: none;" data-page-node-id="azD9yu6xCs3Sjy3v9SuHMI"></div>
+<div class="phone" data-page-node-id="ZrPEy4yD3djIRaHvAQVu8v">
+
+  <!-- ==================== HERO · 滚动展开 ==================== -->
+  <section class="hs" data-page-node-id="XvbvRB3qdmDXlcXyQ4nwuD">
+    <div class="hs-track" id="hsTrack" data-page-node-id="TMqbjUi448QEhDdK39KKtB">
+      <div class="hs-stage" id="hsStage" data-page-node-id="3xNsbXCCJ96AnkDYt1xXAm">
+
+        <div class="hs-frame" id="hsFrame" data-page-node-id="54ZMx6kFNoV2ak8MKwKpZO" style="clip-path: inset(0%);">
+          <video class="hs-media on" id="hv" autoplay="" muted="" loop="" playsinline="" webkit-playsinline="" x5-playsinline="" disableremoteplayback="" preload="auto" poster="assets/hero-poster.jpg" aria-hidden="true" data-page-node-id="A0Rns46hGdzvyjl4PrHHpb" style="transform: scale(1);">
+            <source src="assets/hero.mp4" type="video/mp4" data-page-node-id="nOYwlpaTfEGIDbG6ADIBpX">
+          </video>
+          <div class="hs-veil" data-page-node-id="8UtSEQZP1EwKl3sO0ORaWC"></div>
+          <div class="hs-scrim" id="hsScrim" data-page-node-id="tVDPK5FqjIBpDEofBWQH0x" style="opacity: 0.9;"></div>
+        </div>
+
+        <div class="hs-top" id="hsTop" data-page-node-id="9HEfC2YU3g4x0tjEC8taAf" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">
+          <div class="brand" data-page-node-id="19oopRcRyT9Fz0bOGSbBCt">
+            <div class="mark" data-page-node-id="lLnL8eGPm2ACYKXFtTya7h"><img src="assets/logo-mark.png" alt="吉鸿农业" data-page-node-id="EYZvWfivNDWwylr74Ke9z7"></div>
+            <div data-page-node-id="8Ld40R6lyPIxJHdxwTvdbe">
+              <div class="bname" data-page-node-id="lWFC9ws4ZOsLmBFBpXeowf">吉鸿农业科技有限公司</div>
+              <div class="ben" data-page-node-id="9k2oTPgXlDZvikFIkdtEqM">JI HONG AGRICULTURE</div>
+            </div>
+          </div>
+          <div class="legal" data-page-node-id="3ES8CMok5RyYuyUlIlDl2y">广东吉鸿农业科技有限公司</div>
+        </div>
+
+        <h1 class="hs-title" id="hsTitle" data-page-node-id="QA5FmtmqHhhgWFomgbgrug" style="opacity: 0; transform: translate3d(0px, -30px, 0px) scale(1.06);"><span data-page-node-id="VV3TqGP2BGMrtMuaOctz90" style="translate: none; rotate: none; scale: none; transform-origin: 155.102px 40.5938px; transform: translate(0px, 0px);">吉鸿红薯脱毒苗<br data-page-node-id="OyfShgn1zJ8J5RhmgQ1FsJ"><em data-page-node-id="QxKwiQN2R2K11bYMOZJtFW">让每一株好苗都能看得见</em></span></h1>
+
+        <div class="hs-hint" id="hsHint" data-page-node-id="W5pUCwdzLxjKP6VgvBg9k5" style="opacity: 0; translate: none; rotate: none; scale: none; visibility: inherit; transform: translate(0px, 0px);">向下滑动</div>
+
+        <div class="hs-overlay" id="hsOverlay" data-page-node-id="zW9AXumospyBFaHDLtvSuw" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">
+          <p class="sub" data-page-node-id="o5GLf9Cx5149uu7B0V7awS">吉鸿农业致力于为甘薯种植户提供优质健康的甘薯脱毒种苗、农技服务和销售渠道，通过解决传统种植中病害多、产量低、销售难等痛点，助力种植户增产增收，保障粮食安全与农业可持续发展。</p>
+          <div class="chips" data-page-node-id="EWhDBQZ6rLgZGwln8haUDv">
+            <span class="chip" data-page-node-id="JUCwEvfDqfAFyrlOHFtG4e">茎尖剥离脱毒</span>
+            <span class="chip" data-page-node-id="4mRxlaoTuwPZYCKtrZQrfD">100+ 品种</span>
+            <span class="chip" data-page-node-id="Y82gI1ZzxznjpFK6VRnf8z">三大基地</span>
+            <span class="chip" data-page-node-id="yJkKRyRmW82jAh7tCKa0vs">全产业链</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 数据条 ==================== -->
+  
+
+  <!-- ==================== 01 关于吉鸿 ==================== -->
+  <section class="sec rise in" data-page-node-id="uAUu8fFjjAG2FO4jAniKDJ">
+    <div class="card about" data-page-node-id="aboutCard" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+      <div class="sh" data-page-node-id="dx8iYuXjSkBGd2oU8FsKcA"><span class="sh-num" data-page-node-id="Yt8VAaMnUOmaT3y2MH9z1g" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">01</span><h2 data-page-node-id="KwBTgE8qF1OhCaJQ8MMNvU" style="translate: none; rotate: none; scale: none; clip-path: none; transform: translate(0px, 0px);">关于吉鸿</h2><span class="sh-rule" data-page-node-id="iQML0Lv5OuHu1FfCZdEH4R" style="translate: none; rotate: none; scale: none; transform-origin: 95.5547px 0.5px; transform: translate(0px, 0px);"></span><span class="sh-en" data-page-node-id="fLisOq59tN8aKfdqnGwY2r" style="translate: none; rotate: none; scale: none; opacity: 1; visibility: inherit; transform: translate(0px, 0px);">ABOUT</span></div>
+      <div class="media" data-ratio="4/3" data-slot="图 1 · 基地全景
+images/01-base-aerial.jpg" data-page-node-id="cyRNF5YTZ9iAirCx27eDrX" style="clip-path: inset(0% round 14px);">
+        <img src="images/01-base-aerial.jpg" alt="吉鸿农业甘薯脱毒种苗基地" loading="lazy" onerror="imgFail(this)" data-page-node-id="rPSaWnA9ccH9RvQlEfCXNt" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+      </div>
+      <p class="figcap" data-page-node-id="Cj0aZt4EzDAda32NFtxkep">吉鸿农业设施农业基地 · 甘薯脱毒种苗繁育区</p>
+      <p class="body" style="margin-top:14px" data-page-node-id="Md8CMhDFgqAJ9UpDulSycB">广东省吉鸿农业科技有限公司是一家集甘薯脱毒种苗研发、选育、组培、扩繁、销售、技术和服务于一体的全产业链服务商，产品涵盖甘薯脱毒试管苗、穴盘驯化苗、网棚驯化苗、大田扩繁苗。</p>
+      <p class="body" data-page-node-id="l7Fc41KuN1PtNGDz46EjGF">公司前期已投入近 <b data-page-node-id="KuC7YwIkjkK7cbA4YxBA6v">5000 万元</b>用于技术研发、储备与基础设施建设，已建成江门、桂林、广州三大育苗基地，拥有标准的脱毒组培实验室、病毒检测室、驯化网棚、育苗网棚、优质农田。</p>
+      
+    </div>
+  </section>
+
+  <!-- ==================== 02 三大基地 ==================== -->
+  <!-- 每个分支一套独立图册：三大基地各 7 张实拍，加图只需复制 <div class="gal-slide"> -->
+  <section class="sec rise in" data-page-node-id="Lq2xLbz3lPUV4YFNGLHFw6">
+    <div class="sh" data-page-node-id="doRIkVAjDJ5gZF3Do9nVC8"><span class="sh-num" data-page-node-id="3ahEGuD04u9FuzVnFuknnT" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">02</span><h2 data-page-node-id="xVFTh6klHu2omdC4g5U3vL" style="translate: none; rotate: none; scale: none; clip-path: none; transform: translate(0px, 0px);">吉鸿三大基地</h2><span class="sh-rule" data-page-node-id="oPMqU0f9vuyql6uOxWsZgP" style="translate: none; rotate: none; scale: none; transform-origin: 102.633px 0.5px; transform: translate(0px, 0px);"></span><span class="sh-en" data-page-node-id="TV7fARTjhlBY1Shm7ZPU99" style="translate: none; rotate: none; scale: none; opacity: 1; visibility: inherit; transform: translate(0px, 0px);">BASE</span></div>
+    <div class="units" data-page-node-id="O69wxAFAOTiTvur1JadaDX">
+
+      <article class="unit" data-page-node-id="vOny6SzfkzoIBdJtSxnaB1" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="unit-hd" data-page-node-id="9HDDtw04FuM2w1pGQwADWW">
+          <span class="unit-no" data-page-node-id="AiqXsyJ3GOLYSXF4p8ftwO">01</span>
+          <h3 class="unit-tt" data-page-node-id="B0IKEZcLvFOUZEoDwijoou">江门基地</h3>
+          
+        </div>
+                <div class="gal" data-gal="1" data-page-node-id="hzewJJl2A8OHtG59xuBMLw">
+          <div class="gal-track" data-page-node-id="mteWhqTlqKb6wnOC5sJ6BF">
+          <div class="gal-slide" data-page-node-id="8YFuNIblEOxBqZJPgRpmsz">
+            <div class="media" data-ratio="4/3" data-slot="图 14-base-jiangmen-1
+images/14-base-jiangmen-1.jpg" data-page-node-id="ZzD5O0VEyFChqBhAfQ5Leh" style="clip-path: inset(0% round 14px);">
+              <img src="images/14-base-jiangmen-1.jpg" alt="江门基地 · 基地全景航拍" loading="lazy" onerror="imgFail(this)" data-page-node-id="6LbfzHsF2QHrj6wdSjtfH6" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="cWBzHCjUsiTT7EGAHKczlu">1/10</span></div>
+          <div class="gal-slide" data-page-node-id="CZlVz7Nyn0RW9GoBGtWOUQ">
+            <div class="media" data-ratio="4/3" data-slot="图 14-base-jiangmen-2
+images/14-base-jiangmen-2.jpg" data-page-node-id="EgKSYiKdpbUgxecLXSycQf" style="clip-path: inset(0% round 14px);">
+              <img src="images/14-base-jiangmen-2.jpg" alt="江门基地 · 办公区与玻璃温室" loading="lazy" onerror="imgFail(this)" data-page-node-id="ltX2WweMwUQxNLjmgSorSa" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="QuQ3hDyj8SgViSR8p6etXJ">2/10</span></div>
+          <div class="gal-slide" data-page-node-id="8K1Cegdz0fAvgfW6iDHudq">
+            <div class="media" data-ratio="4/3" data-slot="图 14-base-jiangmen-3
+images/14-base-jiangmen-3.jpg" data-page-node-id="3cYD93PZjUXEjJhe0mhvCm" style="clip-path: inset(0% round 14px);">
+              <img src="images/14-base-jiangmen-3.jpg" alt="江门基地 · 基地内院与停车场" loading="lazy" onerror="imgFail(this)" data-page-node-id="OlNxa1Ee9KmxL0VLWBe0yG" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="HdTCEb7DJhhTclxtgl34Ci">3/10</span></div>
+          <div class="gal-slide" data-page-node-id="4z3u8Uy8WWskrJDCK6pmJG">
+            <div class="media" data-ratio="4/3" data-slot="图 14-base-jiangmen-4
+images/14-base-jiangmen-4.jpg" data-page-node-id="hxCIMXkJkkVrUc41QIEzLl" style="clip-path: inset(0% round 14px);">
+              <img src="images/14-base-jiangmen-4.jpg" alt="江门基地 · 蓝顶办公用房" loading="lazy" onerror="imgFail(this)" data-page-node-id="vjA3otr7NgXeFwUvk0Nspg" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="aGuprXsHrOJ8onJgZufTd9">4/10</span></div>
+          <div class="gal-slide" data-page-node-id="mNCZ1dEuXokrNFTvyYGQCs">
+            <div class="media" data-ratio="4/3" data-slot="图 14-base-jiangmen-5
+images/14-base-jiangmen-5.jpg" data-page-node-id="BeeTpMROowgC3nMCgxWY6o" style="clip-path: inset(0% round 14px);">
+              <img src="images/14-base-jiangmen-5.jpg" alt="江门基地 · 生活区与停车坪" loading="lazy" onerror="imgFail(this)" data-page-node-id="meGNG2796dgEXZgIDCsfZ9" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="lnL72AQTVthmfTJ9EcGdgm">5/10</span></div>
+          <div class="gal-slide" data-page-node-id="WmR3W1aICk4vvdDBC9wH9h">
+            <div class="media" data-ratio="4/3" data-slot="图 14-base-jiangmen-6
+images/14-base-jiangmen-6.jpg" data-page-node-id="uNsgw1W3Xqjiq4Wbd8idPV" style="clip-path: inset(0% round 14px);">
+              <img src="images/14-base-jiangmen-6.jpg" alt="江门基地 · 办公楼外景" loading="lazy" onerror="imgFail(this)" data-page-node-id="LVMPVVQ6QfV2n6919CoXB4" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="woryJ4Ol52sZLwgohmyMSv">6/10</span></div>
+          <div class="gal-slide" data-page-node-id="7JQc20PdFPRPWxm2DnstCP">
+            <div class="media" data-ratio="4/3" data-slot="图 14-base-jiangmen-7
+images/14-base-jiangmen-7.jpg" data-page-node-id="YZnxUDcqpIxGIHoCcS6GyB" style="clip-path: inset(0% round 14px);">
+              <img src="images/14-base-jiangmen-7.jpg" alt="江门基地 · 基地大门与厂区全景" loading="lazy" onerror="imgFail(this)" data-page-node-id="x15jHanFRa563YzedORouF" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="zh8mryTqYWHM3pL9X6jVEY">7/10</span></div>
+          <div class="gal-slide" data-page-node-id="tCRqXsfW24Z9sKykJrWNlK">
+            <div class="media" data-ratio="4/3" data-slot="图 14-base-jiangmen-8
+images/14-base-jiangmen-8.jpg" data-page-node-id="TS9TqGzfhiijKIksUgc14w" style="clip-path: inset(0% round 14px);">
+              <img src="images/14-base-jiangmen-8.jpg" alt="江门基地 · 无菌实验室" loading="lazy" onerror="imgFail(this)" data-page-node-id="t1EYWA1spot7ZE9mXnOuTn" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="5YPCWZGEyCJOGl4Y2X1a8h">8/10</span></div>
+          <div class="gal-slide" data-page-node-id="eqyco2TU0kEc6bZE96pOCX">
+            <div class="media" data-ratio="4/3" data-slot="图 14-base-jiangmen-9
+images/14-base-jiangmen-9.jpg" data-page-node-id="HGl8RR8SN4aKBYL0jFWSjz" style="clip-path: inset(0% round 14px);">
+              <img src="images/14-base-jiangmen-9.jpg" alt="江门基地 · -65℃低温保存与器皿柜" loading="lazy" onerror="imgFail(this)" data-page-node-id="AcIadQSq85bbhJWkfkc0hU" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="IWdJuwDozsJiy4BAg8S9uA">9/10</span></div>
+          <div class="gal-slide" data-page-node-id="yWTB0783kFirEJPoeKMAE4">
+            <div class="media" data-ratio="4/3" data-slot="图 14-base-jiangmen-10
+images/14-base-jiangmen-10.jpg" data-page-node-id="O6fh5YwkmcgWsjjqwHIqhd" style="clip-path: inset(0% round 14px);">
+              <img src="images/14-base-jiangmen-10.jpg" alt="江门基地 · 超净工作台接种操作" loading="lazy" onerror="imgFail(this)" data-page-node-id="JYbVkfQWk1bzPRPJ2mniFf" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="dUBmAkTOBLHoSGHZmHj1c5">10/10</span></div>
+          </div>
+        <div class="gal-dots" data-page-node-id="dGH8dg6Cx44OGhgoKOGzhA"><i class="gal-dot on" data-page-node-id="LeYuAo08OrCUp9jgSZBVif"></i><i class="gal-dot" data-page-node-id="JqFfLOGrinKdHxqEVhCINQ"></i><i class="gal-dot" data-page-node-id="6VTNRh3bRWgKSpPtGQasFN"></i><i class="gal-dot" data-page-node-id="gB7lx1zN3nYLGaJLOdsHbP"></i><i class="gal-dot" data-page-node-id="xu9OWVFq9R4DYtmVbYPNew"></i><i class="gal-dot" data-page-node-id="15HTJt2tHGfFS3JitL6MAd"></i><i class="gal-dot" data-page-node-id="wRU2smugu0ESNhlCjC1THI"></i><i class="gal-dot" data-page-node-id="L9BmvR9TbO5Qk9bY7KGBBC"></i><i class="gal-dot" data-page-node-id="OM5ukcraKavNA6Hp17I0Nx"></i><i class="gal-dot" data-page-node-id="jJAAIzsAypv9AWtJGA9AGq"></i></div></div>
+
+      </article>
+      <article class="unit" data-page-node-id="1o6g9A2lNPouh3Y52HE2Cq" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="unit-hd" data-page-node-id="kTp7HO6FnXtoNNxzx3Yu7B">
+          <span class="unit-no" data-page-node-id="Tt7wqhRlBgjJhlMrTsq5GL">02</span>
+          <h3 class="unit-tt" data-page-node-id="N3X19d9gGGHxTmjPymgKU3">桂林基地</h3>
+          
+        </div>
+        <div class="gal" data-gal="1" data-page-node-id="0tPKq0WkLbsyxQCD5Fa1OQ">
+          <div class="gal-track" data-page-node-id="AYFISoF7BmM9JYF4XYHGPS">
+          <div class="gal-slide" data-page-node-id="yvCPqBNCyTCcLApnGVEOBq">
+            <div class="media" data-ratio="4/3" data-slot="图 13-base-guilin-1
+images/13-base-guilin-1.jpg" data-page-node-id="ZLBYwGNcUlkLSCNcteqTKp" style="clip-path: inset(0% round 14px);">
+              <img src="images/13-base-guilin-1.jpg" alt="桂林基地 · 园区正门" loading="lazy" onerror="imgFail(this)" data-page-node-id="YGJY8nMfR6nDppQWxX4qnt" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div><span class="gal-idx" data-page-node-id="wlKQuaE9CmabJmLdFp0gHg">1/7</span></div>
+          <div class="gal-slide" data-page-node-id="X75kT4sKq8Yc13NcwzkRiV">
+            <div class="media" data-ratio="4/3" data-slot="图 13-base-guilin-2
+images/13-base-guilin-2.jpg" data-page-node-id="Gx3ya7639gNQwYmG0EvzFL" style="clip-path: inset(0% round 14px);">
+              <img src="images/13-base-guilin-2.jpg" alt="桂林基地 · 基地全景航拍" loading="lazy" onerror="imgFail(this)" data-page-node-id="yiD9UUMFckUA7mDERJxG4E" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div><span class="gal-idx" data-page-node-id="pvPNNfaSyaXbFAwb11mPD9">2/7</span></div>
+          <div class="gal-slide" data-page-node-id="EGd2mfcVB3lBMy5JX4OWXS">
+            <div class="media" data-ratio="4/3" data-slot="图 13-base-guilin-3
+images/13-base-guilin-3.jpg" data-page-node-id="vf9fYbEqYFpkaZCdG687rq" style="clip-path: inset(0% round 14px);">
+              <img src="images/13-base-guilin-3.jpg" alt="桂林基地 · 客户中心" loading="lazy" onerror="imgFail(this)" data-page-node-id="luDmtzGBkjQyp0FlHLJILQ" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div><span class="gal-idx" data-page-node-id="FVB2ztamkDyGuQh6eSLnsT">3/7</span></div>
+          <div class="gal-slide" data-page-node-id="H0NtSo9ts7c6Npgts0MEIr">
+            <div class="media" data-ratio="4/3" data-slot="图 13-base-guilin-4
+images/13-base-guilin-4.jpg" data-page-node-id="Xsiv1CU76DqJZuepBJQM6A" style="clip-path: inset(0% round 14px);">
+              <img src="images/13-base-guilin-4.jpg" alt="桂林基地 · 客户中心与温室连廊" loading="lazy" onerror="imgFail(this)" data-page-node-id="MlvieA8SjByYGdmxH7PyIJ" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div><span class="gal-idx" data-page-node-id="9G5qU81aCvV7bIYjlPiOYC">4/7</span></div>
+          <div class="gal-slide" data-page-node-id="hbMEEWeTIbcta1TV4Oy9pi">
+            <div class="media" data-ratio="4/3" data-slot="图 13-base-guilin-5
+images/13-base-guilin-5.jpg" data-page-node-id="ygeq4pHZxevHzqHCEvNhqc" style="clip-path: inset(0% round 14px);">
+              <img src="images/13-base-guilin-5.jpg" alt="桂林基地 · 连栋温室航拍" loading="lazy" onerror="imgFail(this)" data-page-node-id="g5yCFXT3Sbc9n13djpmCe2" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div><span class="gal-idx" data-page-node-id="P8FwG9gk07YUguC3vESVID">5/7</span></div>
+          <div class="gal-slide" data-page-node-id="I6CZq6HSS26UxsTiylNMJR">
+            <div class="media" data-ratio="4/3" data-slot="图 13-base-guilin-6
+images/13-base-guilin-6.jpg" data-page-node-id="W97ZtK6p0988thSjwmqlSx" style="clip-path: inset(0% round 14px);">
+              <img src="images/13-base-guilin-6.jpg" alt="桂林基地 · 温室群全景" loading="lazy" onerror="imgFail(this)" data-page-node-id="yhjKUkhBzGh1bOn50GaeJ1" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div><span class="gal-idx" data-page-node-id="oFBW8bS40oNETLp8eYHUXs">6/7</span></div>
+          <div class="gal-slide" data-page-node-id="oBREL9jEUFIpH1C55yGK2A">
+            <div class="media" data-ratio="4/3" data-slot="图 13-base-guilin-7
+images/13-base-guilin-7.jpg" data-page-node-id="WnNlPjwTxVFQzBZb7GWIa4" style="clip-path: inset(0% round 14px);">
+              <img src="images/13-base-guilin-7.jpg" alt="桂林基地 · 基地与周边生态" loading="lazy" onerror="imgFail(this)" data-page-node-id="i9YPTfO7cZKxn7DJqp7HZO" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div><span class="gal-idx" data-page-node-id="5zBh9xwDV27C6ol9AAKZH1">7/7</span></div>
+          </div><div class="gal-dots" data-page-node-id="ikz0g4WdVk6wyP9vJDQn5h"><i class="gal-dot on" data-page-node-id="GOWxYvkxeAr2iABABlSdc4"></i><i class="gal-dot" data-page-node-id="IdEbp7wVGKvaVZzaKQNH7v"></i><i class="gal-dot" data-page-node-id="hDIT6ARAPYxmqM6iFX3OYf"></i><i class="gal-dot" data-page-node-id="bUEWkNDy8TwH1cw2eA0j39"></i><i class="gal-dot" data-page-node-id="w1Cpd4utMGZfZiBPeKKAPk"></i><i class="gal-dot" data-page-node-id="8cttrDOE3yW1NZbECJjY8N"></i><i class="gal-dot" data-page-node-id="BQq7j9zfdNwyrYpn3DPkeu"></i></div></div>
+
+      </article>
+      <article class="unit" data-page-node-id="h2QcEIiOgPVzIpiGJVgBjb" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="unit-hd" data-page-node-id="M4W0h1MFAm8HoosSO5bwIa">
+          <span class="unit-no" data-page-node-id="TyOLWRRkEqQ8MdDq6lBGPr">03</span>
+          <h3 class="unit-tt" data-page-node-id="7t0t1zImj3YXblbAZFAKEA">广州基地</h3>
+          
+        </div>
+        <div class="gal" data-gal="1" data-page-node-id="3Ck5VkuJDm5zbDBDbIBADg">
+          <div class="gal-track" data-page-node-id="0soB57Y4yC285atA5mH9BV">
+          <div class="gal-slide" data-page-node-id="OPdZgTSJeVMI8fARSpad2T">
+            <div class="media" data-ratio="4/3" data-slot="图 15-base-guangzhou-1
+images/15-base-guangzhou-1.jpg" data-page-node-id="B55caiyxzxiB6SAoOwOQvt" style="clip-path: inset(0% round 14px);">
+              <img src="images/15-base-guangzhou-1.jpg" alt="广州基地 · 智都数字经济产业园" loading="lazy" onerror="imgFail(this)" data-page-node-id="c04zWUXR6SAlNJxT0EWQGZ" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div><span class="gal-idx" data-page-node-id="HH1ul7drE6J2QAwiVZf8fN">1/7</span></div>
+          <div class="gal-slide" data-page-node-id="VlmzuzR61B94674esWKpsc">
+            <div class="media" data-ratio="4/3" data-slot="图 15-base-guangzhou-2
+images/15-base-guangzhou-2.jpg" data-page-node-id="1zEx8HB7lSL6XjZyxKDUoV" style="clip-path: inset(0% round 14px);">
+              <img src="images/15-base-guangzhou-2.jpg" alt="广州基地 · 产业合作洽谈" loading="lazy" onerror="imgFail(this)" data-page-node-id="vguDC4soHnq7GyY4wE31sM" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div><span class="gal-idx" data-page-node-id="Q0UJW9QNtnoqRVONtCawQT">2/7</span></div>
+          <div class="gal-slide" data-page-node-id="EI0PDl043DGH0H8Qm2x1cA">
+            <div class="media" data-ratio="4/3" data-slot="图 15-base-guangzhou-3
+images/15-base-guangzhou-3.jpg" data-page-node-id="uMpiDJfl9qapDBgDLzGHJt" style="clip-path: inset(0% round 14px);">
+              <img src="images/15-base-guangzhou-3.jpg" alt="广州基地 · 甘薯种业合作会议" loading="lazy" onerror="imgFail(this)" data-page-node-id="h9Vl9tZ6B9LBCGGcHUqeE4" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div><span class="gal-idx" data-page-node-id="c8BE4wnFZLXC6bVC2LjRbq">3/7</span></div>
+          <div class="gal-slide" data-page-node-id="LKHjla2gEp9E9kXySV0cE2">
+            <div class="media" data-ratio="4/3" data-slot="图 15-base-guangzhou-4
+images/15-base-guangzhou-4.jpg" data-page-node-id="iDeoNvjW9R3ZGhZbUnOlBE" style="clip-path: inset(0% round 14px);">
+              <img src="images/15-base-guangzhou-4.jpg" alt="广州基地 · 农产品智慧冷链产业园" loading="lazy" onerror="imgFail(this)" data-page-node-id="3zBD5ljygmpLQsoEZIwTmo" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div><span class="gal-idx" data-page-node-id="T917IFgATMXLVOaYP8rZoC">4/7</span></div>
+          <div class="gal-slide" data-page-node-id="6enbipfSxrRvRrQb7h7ayP">
+            <div class="media" data-ratio="4/3" data-slot="图 15-base-guangzhou-5
+images/15-base-guangzhou-5.jpg" data-page-node-id="6vmDNjDbmnZ5ZcDTGUJepl" style="clip-path: inset(0% round 14px);">
+              <img src="images/15-base-guangzhou-5.jpg" alt="广州基地 · 分拣包装车间" loading="lazy" onerror="imgFail(this)" data-page-node-id="M0JUimGoDgnexbTj8TIpYy" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div><span class="gal-idx" data-page-node-id="dQXMC3GKbSwqVvC0McO8Rh">5/7</span></div>
+          <div class="gal-slide" data-page-node-id="e6o6UJzKhum6mFMIlCIIdJ">
+            <div class="media" data-ratio="4/3" data-slot="图 15-base-guangzhou-6
+images/15-base-guangzhou-6.jpg" data-page-node-id="gD8kcAAsW2d66aa8BWwVVK" style="clip-path: inset(0% round 14px);">
+              <img src="images/15-base-guangzhou-6.jpg" alt="广州基地 · 总部办公园区" loading="lazy" onerror="imgFail(this)" data-page-node-id="k3zQFDwVymQhM8OgDV7qFU" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div><span class="gal-idx" data-page-node-id="NoPxvbk0khDPvKIBdJCWLL">6/7</span></div>
+          <div class="gal-slide" data-page-node-id="VPqowgxkhdVW4YlPe7dkse">
+            <div class="media" data-ratio="4/3" data-slot="图 15-base-guangzhou-7
+images/15-base-guangzhou-7.jpg" data-page-node-id="Aafx9XMjWAUVydHhqdVzpj" style="clip-path: inset(0% round 14px);">
+              <img src="images/15-base-guangzhou-7.jpg" alt="广州基地 · 园区总部大楼" loading="lazy" onerror="imgFail(this)" data-page-node-id="edzwH0AZYsAOvA0Jk6EDXJ" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div><span class="gal-idx" data-page-node-id="0hgwKeMGcPiC6PZ5LbihLQ">7/7</span></div>
+          </div><div class="gal-dots" data-page-node-id="phNODBO6KgaQ5NIPCLQ0v6"><i class="gal-dot on" data-page-node-id="2UQmKbQmZoflR8U9cG0Ftv"></i><i class="gal-dot" data-page-node-id="Z19xqBg0UjyKdN138Yxe8a"></i><i class="gal-dot" data-page-node-id="ZPOClMDxaOxJOG2LnAFdCc"></i><i class="gal-dot" data-page-node-id="8AwJ5rWt6M9gzAk3lP22AB"></i><i class="gal-dot" data-page-node-id="Au7UO6Chpp2VpgLm7HIa09"></i><i class="gal-dot" data-page-node-id="PHJERhlJrwyke8DzKxQ7on"></i><i class="gal-dot" data-page-node-id="AfTP3Hl17ysLEL3dAL6yKO"></i></div></div>
+
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ==================== 03 产品种类 ==================== -->
+  <!-- 每个分支一套独立图册：产品分支暂为 3 张占位，日后逐张替换成实拍即可 -->
+  <section class="sec rise in" data-page-node-id="CsN4saHAmAAgc2tKOzDhLA">
+    <div class="sh" data-page-node-id="KTYAE3Gcfv1r7jgfi3RRy6"><span class="sh-num" data-page-node-id="5uCmxsKldhWbsNnLz8kzda" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">03</span><h2 data-page-node-id="7haG6bSukPet9B5Gcx6fu2" style="translate: none; rotate: none; scale: none; clip-path: none; transform: translate(0px, 0px);">吉鸿产品种类</h2><span class="sh-rule" data-page-node-id="oVdEgSvnzqIDFQqqE1HX1u" style="translate: none; rotate: none; scale: none; transform-origin: 85.0781px 0.5px; transform: translate(0px, 0px);"></span><span class="sh-en" data-page-node-id="WIM4t4eyIgMExpB4DmR9gn" style="translate: none; rotate: none; scale: none; opacity: 1; visibility: inherit; transform: translate(0px, 0px);">PRODUCTS</span></div>
+    <div class="units" data-page-node-id="kxJ7EXU1VChMLp3DvqOtgp">
+
+      <article class="unit" data-page-node-id="QOrADyh6TLh9mimFEgXVXu" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="unit-hd" data-page-node-id="tGlRgDAbJ3clUiYcTg08aX">
+          <span class="unit-no" data-page-node-id="MyzSOJGcr5ljw3y8GuOQgF">01</span>
+          <h3 class="unit-tt" data-page-node-id="pPuWj909TeCtgWUdcnI7cZ">脱毒试管苗</h3>
+          
+        </div>
+                <div class="gal" data-gal="1" data-page-node-id="D2yIZRXvR0I5nZaWEylAFR">
+          <div class="gal-track" data-page-node-id="NICkYmSRrlFD7B2rKutmsD">
+          <div class="gal-slide" data-page-node-id="VkD9yURZOYfF7vx5h7qLs3">
+            <div class="media" data-ratio="4/3" data-slot="图 16-product-tube-1
+images/16-product-tube-1.jpg" data-page-node-id="YYV4ZNrHRco8J42PwOvWPZ" style="clip-path: inset(0% round 14px);">
+              <img src="images/16-product-tube-1.jpg" alt="脱毒试管苗 · 培养架上的成排瓶苗" loading="lazy" onerror="imgFail(this)" data-page-node-id="UAs9YDwGnT3HFbtQLBD6S8" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="KZGMjQp7ZlnZKPmo4EWY74">1/7</span></div>
+          <div class="gal-slide" data-page-node-id="OlhwJBt0tqUw7YoDyixedb">
+            <div class="media" data-ratio="4/3" data-slot="图 16-product-tube-2
+images/16-product-tube-2.jpg" data-page-node-id="HsvGDS6dSfPJLOUuXyZmET" style="clip-path: inset(0% round 14px);">
+              <img src="images/16-product-tube-2.jpg" alt="脱毒试管苗 · 瓶苗近景与品种标签" loading="lazy" onerror="imgFail(this)" data-page-node-id="xayRGnWk6Mfds22VMZ34m1" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="AU1u8zoDGjdFeco8fK7AwW">2/7</span></div>
+          <div class="gal-slide" data-page-node-id="VEvSlKeLt4OI6jUJstBLWj">
+            <div class="media" data-ratio="4/3" data-slot="图 16-product-tube-3
+images/16-product-tube-3.jpg" data-page-node-id="9pFINGiYmrgeasf6blr0NR" style="clip-path: inset(0% round 14px);">
+              <img src="images/16-product-tube-3.jpg" alt="脱毒试管苗 · 培养基菌落检测" loading="lazy" onerror="imgFail(this)" data-page-node-id="HQoEgCA9U3zbK01PktKKe5" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="cHEtwW6CrwS5CAY8N8pYJl">3/7</span></div>
+          <div class="gal-slide" data-page-node-id="ErbZtsNKltPlKlgaqA3vyG">
+            <div class="media" data-ratio="4/3" data-slot="图 16-product-tube-4
+images/16-product-tube-4.jpg" data-page-node-id="DRC4wqgVPyh8MxIM59tbBF" style="clip-path: inset(0% round 14px);">
+              <img src="images/16-product-tube-4.jpg" alt="脱毒试管苗 · 培养瓶内脱毒苗特写" loading="lazy" onerror="imgFail(this)" data-page-node-id="xlwfm4zDWRVlarY6pN7DdR" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="JzO6DrbREd5nYP4jLMvtYP">4/7</span></div>
+          <div class="gal-slide" data-page-node-id="WfGCO0wdu722uyZDgNHCea">
+            <div class="media" data-ratio="4/3" data-slot="图 16-product-tube-5
+images/16-product-tube-5.jpg" data-page-node-id="G7SQDxH5Xoiel0EwIlvASP" style="clip-path: inset(0% round 14px);">
+              <img src="images/16-product-tube-5.jpg" alt="脱毒试管苗 · 标注品种代号的瓶苗" loading="lazy" onerror="imgFail(this)" data-page-node-id="RRpvwPiXRlxBMUTCPhMU0U" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="pKW4xfmQwszc5zibkXm1kM">5/7</span></div>
+          <div class="gal-slide" data-page-node-id="coxxNIL6Dtca4i63cBUWYg">
+            <div class="media" data-ratio="4/3" data-slot="图 16-product-tube-6
+images/16-product-tube-6.jpg" data-page-node-id="9NB3TpeRFxabcF36RIlCZH" style="clip-path: inset(0% round 14px);">
+              <img src="images/16-product-tube-6.jpg" alt="脱毒试管苗 · 培养瓶成行排列" loading="lazy" onerror="imgFail(this)" data-page-node-id="VbFyklBLSg7DHqE3O6G12O" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="XvAk1iDlkDv3p8kCz0Wa6M">6/7</span></div>
+          <div class="gal-slide" data-page-node-id="sczXfCp92G17tJdzXhspEo">
+            <div class="media" data-ratio="4/3" data-slot="图 16-product-tube-7
+images/16-product-tube-7.jpg" data-page-node-id="gpSyi8bd5vIbGWvZE5zMAe" style="clip-path: inset(0% round 14px);">
+              <img src="images/16-product-tube-7.jpg" alt="脱毒试管苗 · 组培室培养瓶阵列" loading="lazy" onerror="imgFail(this)" data-page-node-id="CioU04Cs3ReIe7Qnx1RVui" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="Gz40jz9tEJea74Mfne3B6N">7/7</span></div>
+          </div>
+        <div class="gal-dots" data-page-node-id="6eCRZgMq1TpfGZEGCOc94G"><i class="gal-dot on" data-page-node-id="1p7EwJ4uUA85kLQIKXhZuE"></i><i class="gal-dot" data-page-node-id="zOKD2YHfIpMvOK2VGCtieq"></i><i class="gal-dot" data-page-node-id="5XqoipCwVU42VO5rDFF5nG"></i><i class="gal-dot" data-page-node-id="sn0wkhD7FKxsaotofcDF5R"></i><i class="gal-dot" data-page-node-id="psYsgSo7nIY2IsUVoDhZTm"></i><i class="gal-dot" data-page-node-id="y9KLsPtXEYOPey7O66rCYY"></i><i class="gal-dot" data-page-node-id="h7mbApxGiqCLd6bl3X5M9n"></i></div></div>
+        <div class="unit-bd" data-page-node-id="7CBlc7DnmroNQQM4zhaDAR">
+          <p class="bc-desc" data-page-node-id="zTX3U1nPsKmbs0HQXe4ej7">在无菌实验室中切取甘薯茎尖分生组织培育而成的零代原原种苗，脱毒最彻底、品种纯度高，主要用于种质保存与扩繁核心种源。</p>
+          <div class="aud" data-page-node-id="mgxbA0udigK8V7dYVwKiE3"><span class="al" data-page-node-id="U0NC8DtGyUy1QcZvRsEIuD">适用对象</span><span class="tag" data-page-node-id="bUvxFDE5Xcf8EWZsRPPHaG">同行育苗企业驯化</span><span class="tag" data-page-node-id="m7ScVdlewZkW0oyRWcPEDc">农科院校师生科研</span></div>
+        </div>
+      </article>
+
+      <article class="unit" data-page-node-id="HqcyMoZdaoyBCYAz5HiykF" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="unit-hd" data-page-node-id="a83CkihjR6Q7lX3ZGPM3lP">
+          <span class="unit-no" data-page-node-id="QUTvboGp1qRUyC2rFMuZND">02</span>
+          <h3 class="unit-tt" data-page-node-id="j234yRcEYeovrh18q0HEiL">穴盘驯化苗</h3>
+          
+        </div>
+                <div class="gal" data-gal="1" data-page-node-id="DZ6ksJdGOtCSrjAyYPBnO9">
+          <div class="gal-track" data-page-node-id="T5s2FYRW3NeB4rUpPwYC88">
+          <div class="gal-slide" data-page-node-id="p2sajDuZTZCHOltIj9BAmx">
+            <div class="media" data-ratio="4/3" data-slot="图 17-product-tray-1
+images/17-product-tray-1.jpg" data-page-node-id="iBDBAxvukUHnXJjPAgsjvf" style="clip-path: inset(0% round 14px);">
+              <img src="images/17-product-tray-1.jpg" alt="穴盘驯化苗 · 立体架上的穴盘苗" loading="lazy" onerror="imgFail(this)" data-page-node-id="8YLMSV1n20gbs0svzUGH65" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="WGIysKcwr8ryo2radRLtgp">1/8</span></div>
+          <div class="gal-slide" data-page-node-id="DsWB3Ny3WbwfTPgPm8zTkF">
+            <div class="media" data-ratio="4/3" data-slot="图 17-product-tray-2
+images/17-product-tray-2.jpg" data-page-node-id="ESuXZ9Xe8lK71E0QKkBl7p" style="clip-path: inset(0% round 14px);">
+              <img src="images/17-product-tray-2.jpg" alt="穴盘驯化苗 · 穴盘苗叶片特写" loading="lazy" onerror="imgFail(this)" data-page-node-id="kdXPMGdLdscNKDtGfDGht6" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="bGkxBSVAecbHyZ6iadM1qd">2/8</span></div>
+          <div class="gal-slide" data-page-node-id="TtXdLFtZJII08GikvbNIJn">
+            <div class="media" data-ratio="4/3" data-slot="图 17-product-tray-3
+images/17-product-tray-3.jpg" data-page-node-id="9YoGPTRrZ8405J1o2aqgOB" style="clip-path: inset(0% round 14px);">
+              <img src="images/17-product-tray-3.jpg" alt="穴盘驯化苗 · 棚内整理穴盘" loading="lazy" onerror="imgFail(this)" data-page-node-id="eXTrBUcOh37yEPnKyFsb2B" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="4HYJhq9KKMyWWInHDyqqCM">3/8</span></div>
+          <div class="gal-slide" data-page-node-id="fPi4cqnP9NF2GSxDsJ0Cm6">
+            <div class="media" data-ratio="4/3" data-slot="图 17-product-tray-4
+images/17-product-tray-4.jpg" data-page-node-id="jgfAA706rfUEl1MpmT8LKk" style="clip-path: inset(0% round 14px);">
+              <img src="images/17-product-tray-4.jpg" alt="穴盘驯化苗 · 装筐待运的穴盘苗" loading="lazy" onerror="imgFail(this)" data-page-node-id="IEyfUvhtP96D3XkOSBQOMn" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="9NA9ldoGL2rAKcMinDitnu">4/8</span></div>
+          <div class="gal-slide" data-page-node-id="7aNhxkmUBvsQNsuemyAp4Q">
+            <div class="media" data-ratio="4/3" data-slot="图 17-product-tray-5
+images/17-product-tray-5.jpg" data-page-node-id="DTYpdnLYpTiK8wlgZGnOik" style="clip-path: inset(0% round 14px);">
+              <img src="images/17-product-tray-5.jpg" alt="穴盘驯化苗 · 白筐分装种苗" loading="lazy" onerror="imgFail(this)" data-page-node-id="4w3SRQhzqwk4AyyDcMK0i5" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="FHuPfWS6fiY4mZT7bH1WF6">5/8</span></div>
+          <div class="gal-slide" data-page-node-id="jIwLsViQAt8zYDnrIBWgcD">
+            <div class="media" data-ratio="4/3" data-slot="图 17-product-tray-6
+images/17-product-tray-6.jpg" data-page-node-id="aaMK7CrUDlXm6IYU38twuQ" style="clip-path: inset(0% round 14px);">
+              <img src="images/17-product-tray-6.jpg" alt="穴盘驯化苗 · 棚内上架作业" loading="lazy" onerror="imgFail(this)" data-page-node-id="pPFb7j0gL2JW5tehl9yl2g" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="lvUzcfXCcd8S4scwmrkhsP">6/8</span></div>
+          <div class="gal-slide" data-page-node-id="uqedGS5Lb2s4P7wWmm1Nb1">
+            <div class="media" data-ratio="4/3" data-slot="图 17-product-tray-7
+images/17-product-tray-7.jpg" data-page-node-id="fP9rHtflWCAdpWWH75eVmN" style="clip-path: inset(0% round 14px);">
+              <img src="images/17-product-tray-7.jpg" alt="穴盘驯化苗 · 起苗装筐" loading="lazy" onerror="imgFail(this)" data-page-node-id="FspXxEWeJ2CEMfPdePf8yj" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="fmoYRuAqL7jssjGrTTKnbC">7/8</span></div>
+          <div class="gal-slide" data-page-node-id="raimiT8w6b767v1b679AHA">
+            <div class="media" data-ratio="4/3" data-slot="图 17-product-tray-8
+images/17-product-tray-8.jpg" data-page-node-id="gAMp2V5ZBZAExhDeLJ8Vij" style="clip-path: inset(0% round 14px);">
+              <img src="images/17-product-tray-8.jpg" alt="穴盘驯化苗 · 温室穴盘架" loading="lazy" onerror="imgFail(this)" data-page-node-id="x9ZzNX9HXI7t4gNDCaQwN4" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="9vs1FlbQDQpykvRSq9ZIaB">8/8</span></div>
+          </div>
+        <div class="gal-dots" data-page-node-id="nYcijhBFv2DaroUcczdp0r"><i class="gal-dot on" data-page-node-id="QdXItWxzij7Pu6WGFFMXlv"></i><i class="gal-dot" data-page-node-id="cuRwsr927GSklZ9uys8STL"></i><i class="gal-dot" data-page-node-id="7GEAGrLBIsSpM040EoH2vN"></i><i class="gal-dot" data-page-node-id="FRr3SqQJAyKX5SyHOAgs4K"></i><i class="gal-dot" data-page-node-id="tfSVnfpnqUKmuJxk540Ewn"></i><i class="gal-dot" data-page-node-id="GAnZycSsdgkBuFPFajxgGu"></i><i class="gal-dot" data-page-node-id="PuFC3vLfJDDxZY5ea2LC4R"></i><i class="gal-dot" data-page-node-id="aMgZXNi5OpUcMDrbjNeVDz"></i></div></div>
+        <div class="unit-bd" data-page-node-id="ThG5mOMoNitZykEbRXJJYs">
+          <p class="bc-desc" data-page-node-id="dp6JHsR3Y2b6xPISCCIEAF">将脱毒试管苗移栽至无菌基质穴盘、在防虫温室中驯化炼苗得到的一代原种苗，脱毒纯度高、根系发达健壮，移栽成活率高，多用于扩繁种源或高端精品薯种植。</p>
+          <div class="aud" data-page-node-id="PCDjN29eWE07fXfLZLaAqT"><span class="al" data-page-node-id="NEW5TJZKwqWjirS9k3DUDD">适用对象</span><span class="tag" data-page-node-id="OWqXcaGhGhH5RPFn9FQwXF">同行育苗企业扩繁</span><span class="tag" data-page-node-id="00qkHCQtjHEYn0zvsVT3P9">规模种植大户扩繁</span><span class="tag" data-page-node-id="V3yLbqBIDlGi6Sd5bPv7gt">种苗中介代办</span></div>
+        </div>
+      </article>
+
+      <article class="unit" data-page-node-id="iX8OFmkGnuIKHJCpwRSUjz" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="unit-hd" data-page-node-id="tyB6AmehylsL3bvawiqrD3">
+          <span class="unit-no" data-page-node-id="QsBNBsmabZFTPHzdRvAqmG">03</span>
+          <h3 class="unit-tt" data-page-node-id="Bvbtarl4W105zmT1EQcTpJ">大棚扩繁苗</h3>
+          
+        </div>
+                <div class="gal" data-gal="1" data-page-node-id="EdpjJ9LSxFz9QQOsoBKw7D">
+          <div class="gal-track" data-page-node-id="YcbFQRM3S8CgyraKMaMG9d">
+          <div class="gal-slide" data-page-node-id="teWFl16MroRF2Vrvc6LER8">
+            <div class="media" data-ratio="4/3" data-slot="图 18-product-net-1
+images/18-product-net-1.jpg" data-page-node-id="BcIcVlUalravURsovg0AuK" style="clip-path: inset(0% round 14px);">
+              <img src="images/18-product-net-1.jpg" alt="大棚扩繁苗 · 防虫网棚苗床" loading="lazy" onerror="imgFail(this)" data-page-node-id="nxnJKVBBEMwTSHGT6N6YRF" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="hPgiE3WHKBYPCmjKvLJoFU">1/8</span></div>
+          <div class="gal-slide" data-page-node-id="E9hQ2zKF42qSUpPWBMb4In">
+            <div class="media" data-ratio="4/3" data-slot="图 18-product-net-2
+images/18-product-net-2.jpg" data-page-node-id="Dmw1gOho7JcGJMofn3pHy0" style="clip-path: inset(0% round 14px);">
+              <img src="images/18-product-net-2.jpg" alt="大棚扩繁苗 · 手持扩繁苗特写" loading="lazy" onerror="imgFail(this)" data-page-node-id="Gu2GbIDYuRy24aHneJPYgN" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="hm08gmfXe5KT2IRkuZba1V">2/8</span></div>
+          <div class="gal-slide" data-page-node-id="FJgOfakJKSy0APzkE76W7N">
+            <div class="media" data-ratio="4/3" data-slot="图 18-product-net-3
+images/18-product-net-3.jpg" data-page-node-id="1hswSYjhrkW3rYTdLtBxDX" style="clip-path: inset(0% round 14px);">
+              <img src="images/18-product-net-3.jpg" alt="大棚扩繁苗 · 棚内苗床与作业人员" loading="lazy" onerror="imgFail(this)" data-page-node-id="0KFDWBDWsSj9X9K4FvkE7Q" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="rEMVIXPHjQ1IGfTNFiE71t">3/8</span></div>
+          <div class="gal-slide" data-page-node-id="x3izjWB2dFcrhXwB5RYIX8">
+            <div class="media" data-ratio="4/3" data-slot="图 18-product-net-4
+images/18-product-net-4.jpg" data-page-node-id="0G2cbDuD5fHDLTXJoa81m7" style="clip-path: inset(0% round 14px);">
+              <img src="images/18-product-net-4.jpg" alt="大棚扩繁苗 · 棚内苗床近景" loading="lazy" onerror="imgFail(this)" data-page-node-id="Do4yvmS5MsDhUer1Nahhf4" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="szEUrIF9uWhXBPByWCvVhE">4/8</span></div>
+          <div class="gal-slide" data-page-node-id="Xvlbvv8SGSiBDE3R8QTDy3">
+            <div class="media" data-ratio="4/3" data-slot="图 18-product-net-5
+images/18-product-net-5.jpg" data-page-node-id="kMW04LShGQIXH6C67VKw4v" style="clip-path: inset(0% round 14px);">
+              <img src="images/18-product-net-5.jpg" alt="大棚扩繁苗 · 连栋大棚全景" loading="lazy" onerror="imgFail(this)" data-page-node-id="pYQKEMoWjHqGhX9pQbbmcz" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="XqpykYKjTrlljTZZUjn9cS">5/8</span></div>
+          <div class="gal-slide" data-page-node-id="w1wjSyKrre3vdi2Z571r9t">
+            <div class="media" data-ratio="4/3" data-slot="图 18-product-net-6
+images/18-product-net-6.jpg" data-page-node-id="qqewAr1UCAKIqpPmZgJ1HX" style="clip-path: inset(0% round 14px);">
+              <img src="images/18-product-net-6.jpg" alt="大棚扩繁苗 · 棚内采摘作业" loading="lazy" onerror="imgFail(this)" data-page-node-id="hOkpLmHboHXBZhCQZmD0IC" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="Ztaq1ek0FdEzo2W5M68sLl">6/8</span></div>
+          <div class="gal-slide" data-page-node-id="kDXDDidoJ4gYtVu9OYevTp">
+            <div class="media" data-ratio="4/3" data-slot="图 18-product-net-7
+images/18-product-net-7.jpg" data-page-node-id="4E5GIASEtubMQxF2DkO7Sp" style="clip-path: inset(0% round 14px);">
+              <img src="images/18-product-net-7.jpg" alt="大棚扩繁苗 · 棚内苗垄" loading="lazy" onerror="imgFail(this)" data-page-node-id="OMbxk5ty0l3iXGl8DA5a2K" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="iDE6KBfGN8G1yuml6YOCRo">7/8</span></div>
+          <div class="gal-slide" data-page-node-id="BpDJEMpyyw4ZTc48RtoBWQ">
+            <div class="media" data-ratio="4/3" data-slot="图 18-product-net-8
+images/18-product-net-8.jpg" data-page-node-id="rwOGNr7Awgm3eqAWDEFjYA" style="clip-path: inset(0% round 14px);">
+              <img src="images/18-product-net-8.jpg" alt="大棚扩繁苗 · 棚内分苗作业" loading="lazy" onerror="imgFail(this)" data-page-node-id="hw2g3CESxd7W7xKezvHzYh" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="2eu6nm2DbD9cDTzHcVwEq0">8/8</span></div>
+          </div>
+        <div class="gal-dots" data-page-node-id="EMe0meyXFoIdN75FboSR1K"><i class="gal-dot on" data-page-node-id="fCeH6My3NhYk6TxqrnGIsq"></i><i class="gal-dot" data-page-node-id="aC2YQ7c1i0oLGWU8wWqBAs"></i><i class="gal-dot" data-page-node-id="iH4nxwT9ZNRugFbrvBJCG1"></i><i class="gal-dot" data-page-node-id="5gmAa9fn1oHBiYEOQ9kFXj"></i><i class="gal-dot" data-page-node-id="riLtGqBxvXJqYaapBL4klv"></i><i class="gal-dot" data-page-node-id="Nx474DUlJ7komsS6fPeKWL"></i><i class="gal-dot" data-page-node-id="E912MgzJDC94Zams0hovdr"></i><i class="gal-dot" data-page-node-id="h90k0G43CHBPIGXuLLvPF1"></i></div></div>
+        <div class="unit-bd" data-page-node-id="Grz5CB3W8Jq2fLoFpjpFaR">
+          <p class="bc-desc" data-page-node-id="R41u1VB8F0dcVlGoztYWFm">以穴盘驯化苗为基础、在全程防虫的网棚大棚内通过剪蔓扦插批量扩繁的二代脱毒苗，脱毒效果保留完整、种苗长势整齐壮实，是规模化基地定植与进一步扩繁的主流脱毒生产用苗。</p>
+          <div class="aud" data-page-node-id="dShc4hB0kxR0qRdmfTpGv5"><span class="al" data-page-node-id="SMAl7xSxxrK3590swGrHge">适用对象</span><span class="tag" data-page-node-id="vmLcPKHKtymDfl4eEJCCHh">同行育苗企业扩繁</span><span class="tag" data-page-node-id="aCgOV2j3lxWwQjnIONNpkt">规模种植大户扩繁</span><span class="tag" data-page-node-id="SIBQbQUpmfIH8dZNUIMLFg">种苗中介代办</span></div>
+        </div>
+      </article>
+
+      <article class="unit" data-page-node-id="xl3PQfRhEXWljrrVyt7ZoC" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="unit-hd" data-page-node-id="LWohzLvCi41T3wEhorGZ9Q">
+          <span class="unit-no" data-page-node-id="fVFEJzGRIhXChMSeYCK1aG">04</span>
+          <h3 class="unit-tt" data-page-node-id="0Axo8YjgdEsCCKiS8wcAv0">大田扩繁苗</h3>
+          
+        </div>
+                <div class="gal" data-gal="1" data-page-node-id="jBTL7DRvG5nTho4mYJ8WLk">
+          <div class="gal-track" data-page-node-id="xTlHIYWrG4po4ktOmgPJAX">
+          <div class="gal-slide" data-page-node-id="0cE9pujtKCyeMvWvDfmYnv">
+            <div class="media" data-ratio="4/3" data-slot="图 19-product-field-1
+images/19-product-field-1.jpg" data-page-node-id="zxOxsi5uTP1cYVXUDXhRdH" style="clip-path: inset(0% round 14px);">
+              <img src="images/19-product-field-1.jpg" alt="大田扩繁苗 · 起苗捆扎的扩繁苗" loading="lazy" onerror="imgFail(this)" data-page-node-id="7YUF4u4eUbCUZucWHLWW5t" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="F5SHn5cCyyKUgUZJfdNveY">1/7</span></div>
+          <div class="gal-slide" data-page-node-id="ytOpRQmVFoDuURRQTnvddG">
+            <div class="media" data-ratio="4/3" data-slot="图 19-product-field-2
+images/19-product-field-2.jpg" data-page-node-id="bk2oJpEgmHJ6G4w6OE0jTM" style="clip-path: inset(0% round 14px);">
+              <img src="images/19-product-field-2.jpg" alt="大田扩繁苗 · 露天大田片区" loading="lazy" onerror="imgFail(this)" data-page-node-id="8lzKvp0MhVBDDF48EHSEpc" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="hZCHRkJBPR8P0Ki1R2DE1r">2/7</span></div>
+          <div class="gal-slide" data-page-node-id="PiAbvtHB01J5LvCx1Dre43">
+            <div class="media" data-ratio="4/3" data-slot="图 19-product-field-3
+images/19-product-field-3.jpg" data-page-node-id="3mWAKPhzNuAtVVh6Q2xrlQ" style="clip-path: inset(0% round 14px);">
+              <img src="images/19-product-field-3.jpg" alt="大田扩繁苗 · 大田苗叶片特写" loading="lazy" onerror="imgFail(this)" data-page-node-id="eLITryh67nJIlGw7DmW5oV" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="rGufu7QnGnEewstHaH86hv">3/7</span></div>
+          <div class="gal-slide" data-page-node-id="oLRaUzJp7DtwsGO3v84lMB">
+            <div class="media" data-ratio="4/3" data-slot="图 19-product-field-4
+images/19-product-field-4.jpg" data-page-node-id="kmnOQAO5mLJLdkRTIZltNU" style="clip-path: inset(0% round 14px);">
+              <img src="images/19-product-field-4.jpg" alt="大田扩繁苗 · 大田作业与苗垄" loading="lazy" onerror="imgFail(this)" data-page-node-id="I06o8wvd2NFP6GUK7bDC2t" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="G0Sugn5LkH6Md2TjwQeqWW">4/7</span></div>
+          <div class="gal-slide" data-page-node-id="vjJ1P3I5VWXeMgWMfo4fhf">
+            <div class="media" data-ratio="4/3" data-slot="图 19-product-field-5
+images/19-product-field-5.jpg" data-page-node-id="SmqWCNukVba60vyaUjJnR5" style="clip-path: inset(0% round 14px);">
+              <img src="images/19-product-field-5.jpg" alt="大田扩繁苗 · 捆扎待运的种苗" loading="lazy" onerror="imgFail(this)" data-page-node-id="fQTNZk8mhuAawSjO6BUAeB" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="aZGCsOG7Rmq8Cn2RiILrFl">5/7</span></div>
+          <div class="gal-slide" data-page-node-id="0NHuZrXsK9970AOnZ1Q0Bz">
+            <div class="media" data-ratio="4/3" data-slot="图 19-product-field-6
+images/19-product-field-6.jpg" data-page-node-id="vMQNilrnqKL67sYWrDV8j9" style="clip-path: inset(0% round 14px);">
+              <img src="images/19-product-field-6.jpg" alt="大田扩繁苗 · 覆膜田垄航拍" loading="lazy" onerror="imgFail(this)" data-page-node-id="0GANJtKOztcabeylifMOva" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="XA2zv6ISOARsnthOHw83qV">6/7</span></div>
+          <div class="gal-slide" data-page-node-id="ce6Hn4NtQPAvgrsRZJ7ojF">
+            <div class="media" data-ratio="4/3" data-slot="图 19-product-field-7
+images/19-product-field-7.jpg" data-page-node-id="7nda31USxrB5k1UraKEpa3" style="clip-path: inset(0% round 14px);">
+              <img src="images/19-product-field-7.jpg" alt="大田扩繁苗 · 覆膜田垄全景" loading="lazy" onerror="imgFail(this)" data-page-node-id="nQ7i9SO2s3p70KiDB6mIqr" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);">
+            </div>
+          <span class="gal-idx" data-page-node-id="7E1VLiA64yK2zGTh9gleW4">7/7</span></div>
+          </div>
+        <div class="gal-dots" data-page-node-id="ywvzVggVg5RIAkEChKvDnQ"><i class="gal-dot on" data-page-node-id="LQSq7wzQ1y5IFdbkXYqhcf"></i><i class="gal-dot" data-page-node-id="xIswhCb5VHxX3C82S2KsQF"></i><i class="gal-dot" data-page-node-id="sdtbXAR01UDRZgfyUqvBMM"></i><i class="gal-dot" data-page-node-id="ixE7pysnHdcaPS7ljJkfVv"></i><i class="gal-dot" data-page-node-id="rl6kkRqE3Qs8S08vvAhzHn"></i><i class="gal-dot" data-page-node-id="NoFdiYVcFx1XVtLiQggOPo"></i><i class="gal-dot" data-page-node-id="GyT4lxBOUuP8TyQZ74CYvO"></i></div></div>
+        <div class="unit-bd" data-page-node-id="EGeRMWw562BpEAkCRbW8mw">
+          <p class="bc-desc" data-page-node-id="6dqD78cwClkqtBPJ13D6gS">在露天大田中扩繁得到的三至四代生产用苗，产量大、成本低、栽植便捷，适合大面积商品薯种植，但一般建议使用脱毒后 1~2 代的种苗并定期更新种源。</p>
+          <div class="aud" data-page-node-id="BRsYH6OvNev78NnIZ7z2Pj"><span class="al" data-page-node-id="rZSj4nc3XKNelQJl7eAkVp">适用对象</span><span class="tag" data-page-node-id="x0P8TVaUihx9PqKCneMFui">普通种植户</span><span class="tag" data-page-node-id="bZ566xKGzPnVXtMv4HaGtj">规模种植大户</span><span class="tag" data-page-node-id="LGgGc3lMTmFvCGKgtjyGEC">种苗中介代办</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== 04 对比 ==================== -->
+  <section class="sec rise in" data-page-node-id="zEZFj3M27vj0PxFh74y1YN">
+    <div class="sh" data-page-node-id="RJROCqaFypiKT4i3uBHX12"><span class="sh-num" data-page-node-id="0DPEmt5CczDxRpsPcvxBAC" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">04</span><h2 data-page-node-id="S1GO2cctLw8vtdG5dhof1K" style="translate: none; rotate: none; scale: none; clip-path: none; transform: translate(0px, 0px);">脱毒种苗 vs 传统种苗</h2><span class="sh-rule" data-page-node-id="oqEFTmL8D6EMZLHhMd16ta" style="translate: none; rotate: none; scale: none; transform-origin: 69.2578px 0.5px; transform: translate(0px, 0px);"></span><span class="sh-en" data-page-node-id="JJFHNFvBMkia5PjGMN3I6B" style="translate: none; rotate: none; scale: none; opacity: 1; visibility: inherit; transform: translate(0px, 0px);">DATA</span></div>
+    <div class="vstbl" data-page-node-id="HNtCls01zNas1mOjHTUNew">
+      <div class="vshd" data-page-node-id="AUhJ9QdPeElCxS5yxHtVSe"><span data-page-node-id="JQRuCQQBDEQIt13yPglEu3">类别</span><span data-page-node-id="JeKYPKpscYHWDYAHjmc2Yi">吉鸿脱毒苗</span><span data-page-node-id="8QXp3FZfDxbxc9rh6uHI7K">传统种苗</span></div>
+      <div class="vsrow" data-page-node-id="WcPjoPx75GCurWttSYTz93"><span class="vk" data-page-node-id="kM6zf2foXujuT7USTZrGj0">成活率</span><span class="vg" data-page-node-id="SCLH8gd8gJjSZmfB4RjYKY">高达 95% 以上，植株健壮、成活稳定</span><span class="vt" data-page-node-id="G3c4OWdyfhs1PHcNwgJksL">不稳定，易受病毒和苗情影响</span></div>
+      <div class="vsrow" data-page-node-id="cV21HeKjZeNWSNkkr6A3CJ"><span class="vk" data-page-node-id="7NVw3zP0rZ2bHkz5su8CZX">产量表现</span><span class="vg" data-page-node-id="pdDNCDbAQOu9c7LH8UqfhX">增产 50%–200% 甚至更高，产量潜力巨大</span><span class="vt" data-page-node-id="ASh8usE7yf69tADJ0u8xvb">因带病种植，产量普遍较低且不稳定</span></div>
+      <div class="vsrow" data-page-node-id="xfoJvlUXHYB8v0XgZ4OUp7"><span class="vk" data-page-node-id="hvYmmFDSlL8CzcdcgthqEZ">商品品质</span><span class="vg" data-page-node-id="jtX5tn7mQFw5DW2RKRE75X">果皮颜色、条形等商品薯指标显著提升，卖价平均提高 0.3–0.5 元/斤</span><span class="vt" data-page-node-id="RWje7igEqSznGDoARJYGE2">商品性状参差不齐，薯形不规则，优质优价难</span></div>
+      <div class="vsrow" data-page-node-id="5hXrPuBGPfua9feL6LFu1Z"><span class="vk" data-page-node-id="u1dwNOJGrIANHefTvYIR6A">种性与口感</span><span class="vg" data-page-node-id="mpRepuFR8f02lOY2f13LH3">能恢复品种的优越性，使口感、风味更佳</span><span class="vt" data-page-node-id="5m7v1lH9niXfVgp8KFKFl5">种性因病毒积累而退化，口感与品质逐年下降</span></div>
+      <div class="vsrow" data-page-node-id="QMpfmWRucmBV2n7vzQBWCF"><span class="vk" data-page-node-id="0B0RVFEK8FOcFDTuagzaul">抗病环保</span><span class="vg" data-page-node-id="mPvPw4TAxGk0v1PEnY1OQ3">抗病性强，能减少农药使用量 20% 以上，更安全环保</span><span class="vt" data-page-node-id="a3FB31mRjerS0U9VRwKwl1">病毒多发，依赖农药，存在农残与成本风险</span></div>
+      <div class="vsrow" data-page-node-id="w7gcopNSxDgqnW7wiHhVpl"><span class="vk" data-page-node-id="NJwKR41IFowICZ7MLpLpFm">品种保护</span><span class="vg" data-page-node-id="pFGApJgPASaP2gkgDokVva">能将稀缺、未商品化的地方品种复壮提纯，成功选拔并保留，促进品种多元化</span><span class="vt" data-page-node-id="DjPa2HHdp4idpZFWyiV81m">无法有效保护和开发特色品种，可能导致珍贵种质资源流失</span></div>
+    </div>
+
+    <div class="vsec" data-page-node-id="JM0yAIctFD6Ai4HT8FfgFU">
+      <h3 data-page-node-id="joW2AmvbNNgXbrhNKE5VTE">每亩成本·收益测算（按亩栽 4000 株、薯价 1.2 元/斤）</h3>
+      <div class="rchart" data-page-node-id="PIbzzkIEdXQPGEuj61UcmP">
+        <span class="rn" data-page-node-id="g56GramlSjxeadOWJ8d1FQ">普通苗</span>
+        <div class="rb" data-page-node-id="jVdBotJuLirNpsCjIxnkz0"><i style="width:50%" data-page-node-id="AARFQPSAODF6AFgVYDAC9G"></i></div>
+        <span class="rv" data-page-node-id="x8AD5VHx5jXwFHgRw8AzPt">2000–3000 斤</span>
+      </div>
+      <div class="rchart" data-page-node-id="KWGlp4cy15RsxjFA9iEdpX">
+        <span class="rn" data-page-node-id="CNvaPC7ZKDEtP1gDhSfhEr">脱毒苗</span>
+        <div class="rb" data-page-node-id="xfrk2ekz8BvvH7dbW9Vhlz"><i class="best" style="width:100%" data-page-node-id="QhvNiEkHE4B7BEgcTC4lG0"></i></div>
+        <span class="rv" data-page-node-id="j0NJAdJpJ2EeKyFfCj2KsR">3000–6000 斤</span>
+      </div>
+      <div class="profit" data-page-node-id="HF3QqtJutoyRJqAeg5O5ud">
+        <div data-page-node-id="Cs3tKhAuzRH2LskT4H3IQL">
+          <span class="pk" data-page-node-id="tkiHuBAZsUtQFaASOn9PNH">成本增加</span>
+          <b data-page-node-id="IKY1QnWlDwUESp91ZjtTTc">+120~280 元</b>
+          <small data-page-node-id="1CpysoE5DZUA0jyjP4VdQ5">种苗 0.1–0.15 元/株（传统 0.07–0.08 元/株）</small>
+        </div>
+        <div class="hot" data-page-node-id="AL1vTGCcri4Hs6zNb8KeaW">
+          <span class="pk" data-page-node-id="sYEcGlWv1raX6HNJ59PlD9">每亩净利润增加</span>
+          <b data-page-node-id="LgniHJEzJdJPatcj9IO2A7">+1080~3320 元</b>
+          <small data-page-node-id="7ZioUHBLR0KeSz8duSRiVG">亩增收 1200–3600 元，远超种苗成本差</small>
+        </div>
+      </div>
+      <p class="note" data-page-node-id="xl1uGj7S1JXKJeSX4DPNfJ">按 1.2 元/斤计，普通苗亩收入约 2400–3600 元，脱毒苗约 3600–7200 元；扣除成本差后每亩净增利 1080–3320 元。数据为测算区间，实际随品种、地区和管理水平浮动。</p>
+    </div>
+  </section>
+
+
+
+  <!-- ==================== 05 服务对象 ==================== -->
+  <section class="sec rise in" data-page-node-id="vKAV8JpxJ3VxaRRQBD89Mf">
+    <div class="sh" data-page-node-id="TeOd6BAt661A6AFQ7qh3Tt"><span class="sh-num" data-page-node-id="5UtzrmkzCkTlJVloga9FNX" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">05</span><h2 data-page-node-id="AyNCd1DZq8YYuzyBn9lX45" style="translate: none; rotate: none; scale: none; clip-path: none; transform: translate(0px, 0px);">服务对象</h2><span class="sh-rule" data-page-node-id="zwmQK2m2AwU7i4Co7zIJGF" style="translate: none; rotate: none; scale: none; transform-origin: 110.359px 0.5px; transform: translate(0px, 0px);"></span><span class="sh-en" data-page-node-id="8Db8KINSl3uz5yeD4UDd9N" style="translate: none; rotate: none; scale: none; opacity: 1; visibility: inherit; transform: translate(0px, 0px);">CLIENTS</span></div>
+    <div class="tags" data-page-node-id="5aKotKm8DdzJmXHQ6ZkKVD">
+      <span class="tag" data-page-node-id="YSHvbr29AOqHWnaewLnsaT">种苗商</span>
+      <span class="tag" data-page-node-id="QRH5p25uISOJD0qRJ4uZ4Z">农业公司</span>
+      <span class="tag" data-page-node-id="E1SxT9WoHXqjZiCwWQaiKi">合作社</span>
+      <span class="tag" data-page-node-id="xnHLFlNMuPmI5JtU1GGZgH">家庭农场</span>
+      <span class="tag" data-page-node-id="8NZYFcdn8pH1obacJ9pvj4">种植大户</span>
+    </div>
+    <div class="area" data-page-node-id="2HqgMCgZcHGkPBaxEgWPWU">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="ezvUcJ3PoPClw8gFaXXOuF"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z" data-page-node-id="6ct3BVNOcBBIATaxfLEUX2"></path><circle cx="12" cy="10" r="3" data-page-node-id="CkzF9IUF7xxRNKhVnYYlXC"></circle></svg>
+      <div data-page-node-id="TbirD6G8VAaeY9OJTcsYzK">立足 <b data-page-node-id="MQGoDNytjtcwxEhyK4eEKM">江门、桂林、广州</b>等地，业务辐射 <b data-page-node-id="6tabp2vE1db1yGwi1jCGY6">华南</b>、<b data-page-node-id="7BylK03ndhI2fGjXLZCQdz">西北、东北</b>地区，面向全国承接规模化供苗订单。</div>
+    </div>
+    <div class="units" data-page-node-id="9R4EONE5cSeNpeY9H45n2D">
+      <article class="unit" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;" data-page-node-id="yuJMLlImuZwGXwY00VuQz0">
+        <div class="unit-hd" data-page-node-id="e8Rjjjlaghss5HaeIFDuvC">
+          
+          <h3 class="unit-tt" data-page-node-id="CMfV7EpSNMsI4Hk19L6MEb">合作交流</h3>
+          
+        </div>
+        <div class="gal" data-gal="1" data-page-node-id="Cx89Xj5EpCyFmLziO3Ofvs">
+          <div class="gal-track" data-page-node-id="06DDEqnVp7XDQ4xI7sB0aU">
+            <div class="gal-slide" data-page-node-id="imhuUmaGf9dWADksWOiACS">
+              <div class="media" data-ratio="4/3" style="clip-path: inset(0% round 14px);" data-page-node-id="YVGs2k6KM32s1H9reJTkRa">
+                <img src="images/20-coop-1.jpg" alt="合作交流 · 会议室座谈 · 桂林基地航拍讲解" loading="lazy" onerror="imgFail(this)" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);" data-page-node-id="ggt3AmiZBRBzbECGMUg3GW">
+              </div>
+            <span class="gal-idx" data-page-node-id="woQzGT1JKG0mdnAY5si7mC">1/8</span></div>
+            <div class="gal-slide" data-page-node-id="9pd8b1C81j3bAcOXgTPOG4">
+              <div class="media" data-ratio="4/3" style="clip-path: inset(0% round 14px);" data-page-node-id="iCA6mZPwlTXnE9evBojegY">
+                <img src="images/20-coop-2.jpg" alt="合作交流 · 温室大棚长廊 · 陪同考察" loading="lazy" onerror="imgFail(this)" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);" data-page-node-id="YeqBGDa9GXpWOIIuCEmrBV">
+              </div>
+            <span class="gal-idx" data-page-node-id="iIJ764NQwhMwNZGaDamolk">2/8</span></div>
+            <div class="gal-slide" data-page-node-id="lELRcmlrSyJkBDPgVyOom7">
+              <div class="media" data-ratio="4/3" style="clip-path: inset(0% round 14px);" data-page-node-id="RrLOfbcYNP9Qrozp6Gnwmx">
+                <img src="images/20-coop-3.jpg" alt="合作交流 · 会议室圆桌洽谈" loading="lazy" onerror="imgFail(this)" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);" data-page-node-id="TexCtbAWFpA1708oOdrnzU">
+              </div>
+            <span class="gal-idx" data-page-node-id="EqCX1zrPydbvZXhnAoUi5A">3/8</span></div>
+            <div class="gal-slide" data-page-node-id="mRfiRyeXYMk0zqyvs3aeOf">
+              <div class="media" data-ratio="4/3" style="clip-path: inset(0% round 14px);" data-page-node-id="6raaQUDkotIW3CIBgZp8Gi">
+                <img src="images/20-coop-4.jpg" alt="合作交流 · 长桌座谈 · 合作细节沟通" loading="lazy" onerror="imgFail(this)" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);" data-page-node-id="FwTRoPhsovevJ6gawHKBSZ">
+              </div>
+            <span class="gal-idx" data-page-node-id="c854ieBNACupbcBrWlD7zy">4/8</span></div>
+            <div class="gal-slide" data-page-node-id="DyGLdE3EtMnGSFIrS37Zz3">
+              <div class="media" data-ratio="4/3" style="clip-path: inset(0% round 14px);" data-page-node-id="FVTMPe35PngLacdQLFrBDq">
+                <img src="images/20-coop-5.jpg" alt="合作交流 · 育苗架前 · 交流种苗长势" loading="lazy" onerror="imgFail(this)" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);" data-page-node-id="HmUGHLsVJnDGawhHQEzxUq">
+              </div>
+            <span class="gal-idx" data-page-node-id="XILiyLAQ4CTLZLmfrZravR">5/8</span></div>
+            <div class="gal-slide" data-page-node-id="NATMPAAun47Z6ZyR0kXHyN">
+              <div class="media" data-ratio="4/3" style="clip-path: inset(0% round 14px);" data-page-node-id="OWDeNDOvwJxaRRgLcHsjQw">
+                <img src="images/20-coop-6.jpg" alt="合作交流 · 座谈交流 · 现场答疑" loading="lazy" onerror="imgFail(this)" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);" data-page-node-id="7TzaxNFbgGIK63eY8zuo8X">
+              </div>
+            <span class="gal-idx" data-page-node-id="BxIhe0HPz9yHkOu29O5pdh">6/8</span></div>
+            <div class="gal-slide" data-page-node-id="XD9FaMbT3o05A7rOK4KwHD">
+              <div class="media" data-ratio="4/3" style="clip-path: inset(0% round 14px);" data-page-node-id="Fm0v76IgTSgROpx9762yR1">
+                <img src="images/20-coop-7.jpg" alt="合作交流 · 田间查看苗情" loading="lazy" onerror="imgFail(this)" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);" data-page-node-id="6YJHgJv6BYXDL8z3AxAzyF">
+              </div>
+            <span class="gal-idx" data-page-node-id="LPFqCCXngb3raa8yk3vXHa">7/8</span></div>
+            <div class="gal-slide" data-page-node-id="iRaznurAaW5LC5lB9bBhIL">
+              <div class="media" data-ratio="4/3" style="clip-path: inset(0% round 14px);" data-page-node-id="GeBfz1u5cMEHYAiIsoPErD">
+                <img src="images/20-coop-8.jpg" alt="合作交流 · 大棚内查看苗床" loading="lazy" onerror="imgFail(this)" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate(0px, 0px);" data-page-node-id="vOHfJIdhPzF8kM1LPgNdqp">
+              </div>
+            <span class="gal-idx" data-page-node-id="UfbLqg5AxVees7nygnq1G6">8/8</span></div>
+          </div>
+        <div class="gal-dots" data-page-node-id="tbStDdJ7eJ6UZ0CNHAk4o5"><i class="gal-dot on" data-page-node-id="KTfUV9pXeK0YYPAxIEDJSX"></i><i class="gal-dot" data-page-node-id="ynWHuhjXzYI4U166xJa7t7"></i><i class="gal-dot" data-page-node-id="NsVGsK0QR15b3f9m5stFk0"></i><i class="gal-dot" data-page-node-id="tKZaOtU08o0NB4jDX8MINt"></i><i class="gal-dot" data-page-node-id="zqvEackhHqOJAES6lLFxja"></i><i class="gal-dot" data-page-node-id="KWtpNyvn76WwJ31fuDesKB"></i><i class="gal-dot" data-page-node-id="iN44iwKgOu8jwPYbfiT6T8"></i><i class="gal-dot" data-page-node-id="jyBuEhSvAZIQOESSIGTJ7Q"></i></div></div>
+      </article>
+    </div>
+  </section>
+
+
+  <!-- ==================== 06 了解吉鸿 ==================== -->
+  <section class="sec rise in" style="padding-left:0;padding-right:0" data-page-node-id="CylWadUwWEPYq8pi1CgVhE">
+    <div class="sh" style="padding:0 20px" data-page-node-id="QpEfIvU5cOz1Cf7svmTIGy"><span class="sh-num" data-page-node-id="oZGGXmmqsE1J635ylcRUES" style="translate: none; rotate: none; scale: none; transform: rotate(-10deg) scale(0, 0);">06</span><h2 data-page-node-id="0SPqYszVHkrMhuBIlr8JF6" style="translate: none; rotate: none; scale: none; clip-path: inset(0% 0% 100%); transform: translate(0px, 46px);">了解吉鸿</h2><span class="sh-rule" data-page-node-id="xH8G1NLXDsx1W4IWjXoAFs" style="translate: none; rotate: none; scale: none; transform-origin: 0% 50%; transform: scale(0, 1);"></span><span class="sh-en" data-page-node-id="YdkCjCQ0BYlwyFVFl9UkKq" style="translate: none; rotate: none; scale: none; opacity: 0; visibility: hidden; transform: translate(26px, 0px);">GALLERY</span></div>
+    <div class="album" data-page-node-id="mWl64a4SItMWctlQ0CfMq1">
+      <div class="media" data-slot="相册 01
+images/album/a01.jpg" data-page-node-id="bmeESsJKG5UcTovJJGhMHE" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a01.jpg" alt="吉鸿农业相册 01" loading="lazy" onerror="imgFail(this)" data-page-node-id="tscD9DvBCmD9qOyv3F6UX8" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 02
+images/album/a02.jpg" data-page-node-id="mKl5BxiMLiMGYXr6uzlxkD" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a02.jpg" alt="吉鸿农业相册 02" loading="lazy" onerror="imgFail(this)" data-page-node-id="ovLfEA43tu4GmVFkOVdDgi" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 03
+images/album/a03.jpg" data-page-node-id="mZk6ixnF5x8K1xBt0B3s5N" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a03.jpg" alt="吉鸿农业相册 03" loading="lazy" onerror="imgFail(this)" data-page-node-id="T4P3W9UXG2Zv540rpl6iOg" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 04
+images/album/a04.jpg" data-page-node-id="iQwH0aAB01FJ6pFahRKWxy" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a04.jpg" alt="吉鸿农业相册 04" loading="lazy" onerror="imgFail(this)" data-page-node-id="LnAULtf7sMa15Q25i2NQZB" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 05
+images/album/a05.jpg" data-page-node-id="aFnW4d503iIJ1UtHG6Vmov" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a05.jpg" alt="吉鸿农业相册 05" loading="lazy" onerror="imgFail(this)" data-page-node-id="R05wdoChTwCNI1OManAFuW" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 06
+images/album/a06.jpg" data-page-node-id="1oFTj2KGQpudL8Sj9KefwP" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a06.jpg" alt="吉鸿农业相册 06" loading="lazy" onerror="imgFail(this)" data-page-node-id="WNk9adC4SjbQfalRpimi75" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 07
+images/album/a07.jpg" data-page-node-id="GhXxvgmCh8LBdwZE1H6qyN" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a07.jpg" alt="吉鸿农业相册 07" loading="lazy" onerror="imgFail(this)" data-page-node-id="Do4hbPvVl7Fu5OAoNgUsgx" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 08
+images/album/a08.jpg" data-page-node-id="hN2aBmu3RpCnNVKBUr1gHM" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a08.jpg" alt="吉鸿农业相册 08" loading="lazy" onerror="imgFail(this)" data-page-node-id="lIIFziHdYXut7mnSRA5EwF" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 09
+images/album/a09.jpg" data-page-node-id="VdBVMa0izQm30IAByECYru" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a09.jpg" alt="吉鸿农业相册 09" loading="lazy" onerror="imgFail(this)" data-page-node-id="bQzNfabAePIsL0wWxpAS4n" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 10
+images/album/a10.jpg" data-page-node-id="cuAvhlScpPV6hoRz34TYvI" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a10.jpg" alt="吉鸿农业相册 10" loading="lazy" onerror="imgFail(this)" data-page-node-id="wRQNRV5onVC1F5SA9B8xmb" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 11
+images/album/a11.jpg" data-page-node-id="tzNotqdPxyTSR40AaogPaF" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a11.jpg" alt="吉鸿农业相册 11" loading="lazy" onerror="imgFail(this)" data-page-node-id="OjvAC0ek6Kz37U92zWN5HN" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 12
+images/album/a12.jpg" data-page-node-id="j1UEVPqfaz4C001MRJZG8G" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a12.jpg" alt="吉鸿农业相册 12" loading="lazy" onerror="imgFail(this)" data-page-node-id="AXHhBgngHzKxpK8z3A8I6t" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 13
+images/album/a13.jpg" data-page-node-id="szVZORR8Uri9CYKA1S3QLn" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a13.jpg" alt="吉鸿农业相册 13" loading="lazy" onerror="imgFail(this)" data-page-node-id="11UO6ImsVHu8bFg9rQy2rD" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 14
+images/album/a14.jpg" data-page-node-id="B76LxMJyl869uG0fsdUu9V" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a14.jpg" alt="吉鸿农业相册 14" loading="lazy" onerror="imgFail(this)" data-page-node-id="MuBBXB5cIVe5WDeE0XPlMd" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 15
+images/album/a15.jpg" data-page-node-id="XBMY8gY0I8x95DrzL9hhDx" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a15.jpg" alt="吉鸿农业相册 15" loading="lazy" onerror="imgFail(this)" data-page-node-id="FpAHD9FdRrisAWSTFKbw6f" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 16
+images/album/a16.jpg" data-page-node-id="HF38GH1KYTDdTke8nTQUzI" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a16.jpg" alt="吉鸿农业相册 16" loading="lazy" onerror="imgFail(this)" data-page-node-id="xnbYsvWKZfGWCtaDH6IXxX" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 17
+images/album/a17.jpg" data-page-node-id="bFvPCJ1ZaVMPnFUgU2dbv6" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a17.jpg" alt="吉鸿农业相册 17" loading="lazy" onerror="imgFail(this)" data-page-node-id="7nVmi1EQNrCCxg4e9NlGPI" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 18
+images/album/a18.jpg" data-page-node-id="LnQubOEEiF2UpdE5uxg1Uq" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a18.jpg" alt="吉鸿农业相册 18" loading="lazy" onerror="imgFail(this)" data-page-node-id="W8gEWGYhih1lWr1vCzFezq" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 19
+images/album/a19.jpg" data-page-node-id="lJ6rcW81dsjstbn4l9d3Do" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a19.jpg" alt="吉鸿农业相册 19" loading="lazy" onerror="imgFail(this)" data-page-node-id="4tmLBN4fvhRxCTRQl8JEfX" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 20
+images/album/a20.jpg" data-page-node-id="a4U0ITmxUS4alRFtaRhH0Q" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a20.jpg" alt="吉鸿农业相册 20" loading="lazy" onerror="imgFail(this)" data-page-node-id="ijEZ5uSDMIrCcHC5m0tvM1" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 21
+images/album/a21.jpg" data-page-node-id="j5qUt7AdIMRgXPxiMT5QaL" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a21.jpg" alt="吉鸿农业相册 21" loading="lazy" onerror="imgFail(this)" data-page-node-id="ixCHmZaeLIIzjex11hdOXJ" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 22
+images/album/a22.jpg" data-page-node-id="8DzF0TWldzXLDFnbx4FS6n" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a22.jpg" alt="吉鸿农业相册 22" loading="lazy" onerror="imgFail(this)" data-page-node-id="cx9eC33fe1k4heuzad6JCi" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 23
+images/album/a23.jpg" data-page-node-id="J3DcgfnphPjBZzN4VEMDtH" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a23.jpg" alt="吉鸿农业相册 23" loading="lazy" onerror="imgFail(this)" data-page-node-id="5qiXu7mi1a0iTmPLMewIpQ" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 24
+images/album/a24.jpg" data-page-node-id="40e6aTyOg0aihIGLlDHxf0" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a24.jpg" alt="吉鸿农业相册 24" loading="lazy" onerror="imgFail(this)" data-page-node-id="DrQAveOSvzmDRnYCFnhVOB" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 25
+images/album/a25.jpg" data-page-node-id="515SLeghkPOouHyX4dSwpy" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a25.jpg" alt="吉鸿农业相册 25" loading="lazy" onerror="imgFail(this)" data-page-node-id="SvjRZzIwEKbRfcMcfjrFmC" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 26
+images/album/a26.jpg" data-page-node-id="yaMvCNiKPCQ1Tvz8TlUG8T" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a26.jpg" alt="吉鸿农业相册 26" loading="lazy" onerror="imgFail(this)" data-page-node-id="PBYOWIuoEoclslApx6buxB" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 27
+images/album/a27.jpg" data-page-node-id="z3mIw7zeD1UStucxwrI62E" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a27.jpg" alt="吉鸿农业相册 27" loading="lazy" onerror="imgFail(this)" data-page-node-id="lMDIPDksFupYH2eJbBApkw" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 28
+images/album/a28.jpg" data-page-node-id="URAPKeu7CLKjFdytLtPHNY" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a28.jpg" alt="吉鸿农业相册 28" loading="lazy" onerror="imgFail(this)" data-page-node-id="vjAz9MZQtxjwE7cgt9E9Vl" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 29
+images/album/a29.jpg" data-page-node-id="0EyuizBoHFxL2Hoy1sLdd4" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a29.jpg" alt="吉鸿农业相册 29" loading="lazy" onerror="imgFail(this)" data-page-node-id="ELG96MkBveiwDeavopuq75" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 30
+images/album/a30.jpg" data-page-node-id="gRjmDBddEQlfXr834WT5MG" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a30.jpg" alt="吉鸿农业相册 30" loading="lazy" onerror="imgFail(this)" data-page-node-id="BFC9sG39uBj1CRFkGqIzDL" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 31
+images/album/a31.jpg" data-page-node-id="t17Pp91t2jlOD7s8OOqnZf" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a31.jpg" alt="吉鸿农业相册 31" loading="lazy" onerror="imgFail(this)" data-page-node-id="E7UwIBaSzDoGviPsW1SNYi" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 32
+images/album/a32.jpg" data-page-node-id="NthFuB6Tgx7Dm5mnQwBlpB" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a32.jpg" alt="吉鸿农业相册 32" loading="lazy" onerror="imgFail(this)" data-page-node-id="G6ZxyySAmH9HyqkjxrPT2a" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 33
+images/album/a33.jpg" data-page-node-id="spjeWEqDd0PVyOhhNUIlZb" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a33.jpg" alt="吉鸿农业相册 33" loading="lazy" onerror="imgFail(this)" data-page-node-id="kcLA4jEdIfqQBEVkxkH9A5" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 34
+images/album/a34.jpg" data-page-node-id="CsnxcZRP6C5zrpjBkGFDDj" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a34.jpg" alt="吉鸿农业相册 34" loading="lazy" onerror="imgFail(this)" data-page-node-id="7R7E53MMhNSpg1fStoGtAF" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 35
+images/album/a35.jpg" data-page-node-id="erQ0d46s3LmFguNyh8wPuC" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a35.jpg" alt="吉鸿农业相册 35" loading="lazy" onerror="imgFail(this)" data-page-node-id="JQC6DmUHIergYYiHRE0uN7" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 36
+images/album/a36.jpg" data-page-node-id="dDDGz2NJPM00O6G8arSASn" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a36.jpg" alt="吉鸿农业相册 36" loading="lazy" onerror="imgFail(this)" data-page-node-id="BiiRn7CBwLoUo0x2T0284K" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 37
+images/album/a37.jpg" data-page-node-id="DvVWHNUXDSytgDMccRwRDR" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a37.jpg" alt="吉鸿农业相册 37" loading="lazy" onerror="imgFail(this)" data-page-node-id="os4GKcfN6ADXxUhr0kHRtx" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 38
+images/album/a38.jpg" data-page-node-id="lIautLcvmMVo01kyqzmagH" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a38.jpg" alt="吉鸿农业相册 38" loading="lazy" onerror="imgFail(this)" data-page-node-id="mPClNtUG7DRE6z8ymzJ2EZ" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 39
+images/album/a39.jpg" data-page-node-id="AIM6YIU7sqCQDEYTS18mhP" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a39.jpg" alt="吉鸿农业相册 39" loading="lazy" onerror="imgFail(this)" data-page-node-id="wHS8QWWyFyhW4HIcVqYHoW" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 40
+images/album/a40.jpg" data-page-node-id="loUtwG9ZpON6hEltlyzOFA" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a40.jpg" alt="吉鸿农业相册 40" loading="lazy" onerror="imgFail(this)" data-page-node-id="RNqTAvgmDWtZTwWV1swOVO" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 41
+images/album/a41.jpg" data-page-node-id="kvDtsZZemv384hJHjw6K6L" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a41.jpg" alt="吉鸿农业相册 41" loading="lazy" onerror="imgFail(this)" data-page-node-id="euvpAclnnHNVyNYQW9m1Yt" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 42
+images/album/a42.jpg" data-page-node-id="3jpjmn6rKMqarWwXWaRhkQ" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a42.jpg" alt="吉鸿农业相册 42" loading="lazy" onerror="imgFail(this)" data-page-node-id="ezzUPdmxll3FjEDI1diO2o" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 43
+images/album/a43.jpg" data-page-node-id="oJCZhxJvNIy5HPWFLbap88" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a43.jpg" alt="吉鸿农业相册 43" loading="lazy" onerror="imgFail(this)" data-page-node-id="NtyUqzX0dDPbpgHHr8cZYx" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 44
+images/album/a44.jpg" data-page-node-id="AoYkIGlOIqszF3KCuI1lxy" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a44.jpg" alt="吉鸿农业相册 44" loading="lazy" onerror="imgFail(this)" data-page-node-id="EHx8AYLz5lidyF55dtHuHd" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 45
+images/album/a45.jpg" data-page-node-id="IlZdIU2cg07EzVS8lmI9Zw" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a45.jpg" alt="吉鸿农业相册 45" loading="lazy" onerror="imgFail(this)" data-page-node-id="Wywjy49JbapeOGGzr5F1Ex" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 46
+images/album/a46.jpg" data-page-node-id="4SmlDib0eAqxV8SLCgnTJZ" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a46.jpg" alt="吉鸿农业相册 46" loading="lazy" onerror="imgFail(this)" data-page-node-id="3xpNzDvmlDFRV7lCuMpxYw" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+      <div class="media" data-slot="相册 47
+images/album/a47.jpg" data-page-node-id="aGits5r133FGnS1RbHAzSS" style="clip-path: inset(14% 8% 86% round 18px);"><img src="images/album/a47.jpg" alt="吉鸿农业相册 47" loading="lazy" onerror="imgFail(this)" data-page-node-id="SfRd4H6XFGoXFtnLX669Dr" style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: scale(1.16, 1.16);"></div>
+    </div>
+    <p class="albhint" style="padding:0 20px" data-page-node-id="yV4tpO0Qj6M77GVT2sC5g2">← 左右滑动浏览 · 点击查看大图 →</p>
+  </section>
+
+  <!-- ==================== 07 联系我们 ==================== -->
+  <section class="sec rise in" data-page-node-id="MveyzW25uqdXLS9B9b6B7F">
+    <div class="sh" data-page-node-id="n0MgFCfnvQMiEvXrFt8HCO"><span class="sh-num" data-page-node-id="UyxUQWc0pIxT9zSzZGBKJ1" style="translate: none; rotate: none; scale: none; transform: rotate(-10deg) scale(0, 0);">07</span><h2 data-page-node-id="T8WsTh6PGpLEAfeIfH9fgm" style="translate: none; rotate: none; scale: none; clip-path: inset(0% 0% 100%); transform: translate(0px, 46px);">联系我们</h2><span class="sh-rule" data-page-node-id="xTqdhoeD8LW9RfdcInZU40" style="translate: none; rotate: none; scale: none; transform-origin: 0% 50%; transform: scale(0, 1);"></span><span class="sh-en" data-page-node-id="TIQIhN5IDDhxD44B5yNNiz" style="translate: none; rotate: none; scale: none; opacity: 0; visibility: hidden; transform: translate(26px, 0px);">CONTACT</span></div>
+    <div class="card contact" data-page-node-id="moyWm4GyO9dNEyA8P8UURz" style="translate: none; rotate: none; scale: none; transform: translate(0px, 58px); opacity: 0;">
+
+      <a class="crow" href="tel:14795894134" data-page-node-id="5dGDJcA6alHn2n2bIs0KQb">
+        <span class="cic" data-page-node-id="RRbavcDrQ0fp7MPFeTrntg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="YGeFYDvDzRdBpnmQmRK8GJ"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" data-page-node-id="QCLWhwhm7i24A0oVDExMMv"></path></svg></span>
+        <span class="ctxt" data-page-node-id="i5IxxqdoCrx02VmENi5ZgO"><span class="ck" data-page-node-id="F5lWUeKUDzMUq15sJ0jm0F">业务电话</span><div class="cv" data-page-node-id="74QxFzv0KrfPtlq896OhMW">147-9589-4134</div></span>
+        <span class="go" data-page-node-id="4P79Y2JBtjsxA8D1ByfzZf">拨打</span>
+      </a>
+
+      <div class="crow" onclick="copyWx()" style="cursor:pointer" data-page-node-id="tBOwaXYxdo1oOuBkQOZNa6">
+        <span class="cic" data-page-node-id="qthMFmGlnx84lUpcKXUjty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="08rhHnu4Emi6Udx8hCZsTl"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.9 9.9 0 0 1-3.8-.7L3 21l1.7-4.3A8.2 8.2 0 0 1 3 11.5C3 6.8 7 3 12 3s9 3.8 9 8.5z" data-page-node-id="aE2aOoyNNmIa7C1sQwGCbL"></path></svg></span>
+        <span class="ctxt" data-page-node-id="zza33SLni1yyf8AWZoa12W"><span class="ck" data-page-node-id="V1yAKdT1HoEBdj12MhiWFj">业务微信</span><div class="cv" id="wxid" data-page-node-id="hHEGt5KUZxitk3ZfxRBCcM">qstn20202020</div></span>
+        <span class="go" data-page-node-id="NqYFf8cWmHWLARTZRHBCQE">复制</span>
+      </div>
+
+      <a class="crow" href="https://uri.amap.com/search?keyword=%E6%A1%82%E6%9E%97%E5%B8%82%E9%9B%81%E5%B1%B1%E5%8C%BA%E5%A4%A7%E5%9F%A0%E4%B9%A1%E5%A4%A7%E5%9F%A0%E8%B7%AF7%E5%8F%B7-1" target="_blank" rel="noopener" data-page-node-id="tEmF87S2b5Xk5wqNaeCAn4">
+        <span class="cic" data-page-node-id="Yn98JFZGDkVl2cdcFxBFoF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="zypU9ErPyWR4GtiVAwfTsj"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z" data-page-node-id="rvC1gHEEStM60WMD8XIe0j"></path><circle cx="12" cy="10" r="3" data-page-node-id="KJcT6m5ExKzph0l7Lf6aIq"></circle></svg></span>
+        <span class="ctxt" data-page-node-id="j9KyQKhYbwhtppwizoOzxq"><span class="ck" data-page-node-id="kZE3Po2iYJriaGvj8NPXx7">桂林基地</span><div class="cv" data-page-node-id="Pre6QqS8sfCnUx14fBfvHL">桂林市雁山区大埠乡大埠路7号-1</div></span>
+        <span class="go" data-page-node-id="1rGhqtmgZTtr2WluvGOHel">导航</span>
+      </a>
+
+      <a class="crow" href="https://uri.amap.com/search?keyword=%E5%B9%BF%E4%B8%9C%E7%9C%81%E6%B1%9F%E9%97%A8%E5%B8%82%E5%8F%B0%E5%B1%B1%E5%B8%82%E6%B5%B7%E5%AE%B4%E9%95%87%E4%BE%A8%E4%B8%B0%E8%B7%AF%E5%90%89%E9%B8%BF%E5%86%9C%E4%B8%9A%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8" target="_blank" rel="noopener" data-page-node-id="QLHNYV8Fl4DrbxqdRYlw9I">
+        <span class="cic" data-page-node-id="JH6ZoTJZ9rzxMFg8qUord4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="eeDLnYWlNPRAkitktcO6Fz"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z" data-page-node-id="5ikooQAjCRKzOAXDrl5JMd"></path><circle cx="12" cy="10" r="3" data-page-node-id="YixkKgE5tChOwokAweYTSS"></circle></svg></span>
+        <span class="ctxt" data-page-node-id="DeocUApBRsy5YjhxpKqLkt"><span class="ck" data-page-node-id="6j5pyReRNSvUIOMi7z0er3">江门基地</span><div class="cv" data-page-node-id="fTNMY8ojDdk8i56QPXqb8t">广东省江门市台山市海宴镇侨丰路吉鸿农业科技有限公司</div></span>
+        <span class="go" data-page-node-id="mV2y36vJ8UfGnKyq8xnFSW">导航</span>
+      </a>
+
+      <a class="crow" href="https://www.douyin.com/user/MS4wLjABAAAARnQTg2VGKP-8dL-u7_CcSZrjkwV0CC9VJuAOyJpHoM6zs82iPRThsdfUY611eYo4?from_tab_name=main" target="_blank" rel="noopener" data-page-node-id="8xGEsiBIM4sLJGpIAlWBS6">
+        <span class="cic" data-page-node-id="gieBwuV13f0i8Yq0sBEo14"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="aPjTcGWldAKiA05WCFd0YC"><rect x="3" y="3" width="18" height="18" rx="4" data-page-node-id="CWjHSjaZcjbd52zIKNeeGr"></rect><path d="M8 9h4a2 2 0 0 1 0 4H8v3" data-page-node-id="iP81keaYj7xDo9PBcoxwXR"></path></svg></span>
+        <span class="ctxt" data-page-node-id="aDLyr2d1QD7lDF6AaHZ84C"><span class="ck" data-page-node-id="xjoRvFulMENLXRoFEnHmVT">抖音企业号</span><div class="cv" data-page-node-id="5dhnhzl2Md15KAMcbczpAc">广东吉鸿农业红薯脱毒种苗</div></span>
+        <span class="go" data-page-node-id="3JaVCeLm9pTbHnWkRq7sX">查看</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ==================== 二维码 ==================== -->
+  
+
+  <div class="qrwrap rise in" data-page-node-id="afwHNbZBs5FiEcVTgHxx2f" style="translate: none; rotate: none; scale: none; transform: translate(0px, 58px); opacity: 0;">
+    <img class="qrdy" src="assets/douyin-qr.jpg" alt="抖音蓝V号二维码 · 广东吉鸿农业红薯脱毒种苗" loading="lazy" data-page-node-id="yILyV29YiulebrvGk8sAxZ">
+    <div class="qrcap" data-page-node-id="wZY4Jf0Fh8OMQ8GfaBLSeY">抖音扫码关注蓝V号 · 广东吉鸿农业红薯脱毒种苗</div>
+  </div>
+    </div>
+  <footer data-page-node-id="Lr3HAqWTWrD7FFai6Iyn1P" style="translate: none; rotate: none; scale: none; transform: translate(0px, 58px); opacity: 0;">
+    <img src="assets/logo-full.png" alt="吉鸿农业" data-page-node-id="ujanWwoBuNjhybewiXssQo">
+    吉鸿农业 · 高新甘薯脱毒种苗<br data-page-node-id="JPUVnkJghUhHYdu65GOEEj">
+    © 2026 广东吉鸿农业科技有限公司
+  </footer>
+
+
+<!-- ==================== 底部固定条 ==================== -->
+<div class="bar-fix" data-page-node-id="lvGuHYJPW7pesNz3CcI8LC">
+  <div class="bar-in" data-page-node-id="0N7kwXTTH7h4VTESGuL6Al">
+    <a class="btn btn-main" href="tel:14795894134" data-page-node-id="PbwUl2Gi79ahwZe9iqlbK4">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="qEalBCa8sNNLjGiQKtirFh"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" data-page-node-id="BopogyhEfeO9gQTOv7jmlk"></path></svg>
+      电话咨询
+    </a>
+    <button class="btn btn-ghost" onclick="copyWx()" data-page-node-id="fXHbfwFMZF2uZCGpiZc67Y">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="ixKYYmegq68i8G3balfLHj"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.9 9.9 0 0 1-3.8-.7L3 21l1.7-4.3A8.2 8.2 0 0 1 3 11.5C3 6.8 7 3 12 3s9 3.8 9 8.5z" data-page-node-id="jm3KPoSPBhTYnCZa7Gbnzi"></path></svg>
+      加微信
+    </button>
+  </div>
+</div>
+
+<div class="lb" id="lb" data-page-node-id="Mp6QCsYqOKwoFFkWvASiZK"><button class="lb-x" id="lbx" aria-label="关闭" data-page-node-id="SNL9fEx4m6tolbdQHmcWFd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" data-page-node-id="qiPiR9b4x8DrbBqhdOjWNF"><path d="M6 6l12 12M18 6L6 18" data-page-node-id="710PYmcsAHGQ87myb4KmaH"></path></svg></button><img id="lbimg" src="" alt="" data-page-node-id="bmFEMLGCL6tDV269Opim9S"><div class="cap" id="lbcap" data-page-node-id="A8h8wpeoM8AZ03P3vzELAQ"></div></div>
+<div class="toast" id="toast" data-page-node-id="BqGtWPtUaytdKG8KDRI2TH">微信号已复制：qstn20202020</div>
+
+<script data-page-node-id="6dduE9NuYSVGb3jAejBAEh">
+/* ---------- 背景视频：能播就淡入，不能播就留封面 ---------- */
+(function(){
+  var v = document.getElementById('hv');
+  if(!v) return;
+  v.addEventListener('playing', function(){ v.classList.add('on'); });
+  var p = v.play(); if(p && p.catch) p.catch(function(){});
+  document.addEventListener('visibilitychange', function(){
+    if(document.hidden) v.pause(); else { var q = v.play(); if(q && q.catch) q.catch(function(){}); }
+  });
+})();
+
+/* ---------- HERO · 滚动展开驱动 ---------- */
+(function(){
+  var track = document.getElementById('hsTrack');
+  var stage = document.getElementById('hsStage');
+  var frame = document.getElementById('hsFrame');
+  var title = document.getElementById('hsTitle');
+  var hint  = document.getElementById('hsHint');
+  var top   = document.getElementById('hsTop');
+  var over  = document.getElementById('hsOverlay');
+  var scrim = document.getElementById('hsScrim');
+  var media = document.getElementById('hv');
+  if(!track || !stage || !frame) return;
+
+  /* 系统开了「减弱动态效果」就交给 CSS 静态版 */
+  var mq = window.matchMedia ? window.matchMedia('(prefers-reduced-motion:reduce)') : null;
+  if(mq && mq.matches) return;
+
+  var target = 0, cur = 0, running = false, last = 0;
+
+  function clamp(v,a,b){ return v<a ? a : (v>b ? b : v); }
+  function smoothstep(a,b,x){ var t = clamp((x-a)/((b-a)||1e-6),0,1); return t*t*(3-2*t); }
+
+  /* 进度：取景框开始固定时为 0，轨道走完时为 1 */
+  function readProgress(){
+    var dist = track.offsetHeight - stage.offsetHeight;
+    if(dist <= 1) return 0;
+    return clamp(-track.getBoundingClientRect().top / dist, 0, 1);
+  }
+
+  function apply(p){
+    var e  = smoothstep(0, 0.86, p);         // 展开进度（p 到 0.86 就满屏，末段留白给文案）
+    var iy = 22 * (1 - e);                   // 上下留白 22% -> 0
+    var ix = 9  * (1 - e);                   // 左右留白 9%  -> 0
+    var r  = 26 * (1 - e);                   // 圆角 26px -> 0
+    var clip = 'inset(' + iy.toFixed(2) + '% ' + ix.toFixed(2) + '% '
+             + iy.toFixed(2) + '% ' + ix.toFixed(2) + '% round ' + r.toFixed(1) + 'px)';
+    frame.style.clipPath = clip;
+    frame.style.webkitClipPath = clip;
+
+    if(media) media.style.transform = 'scale(' + (1.16 - 0.16 * e).toFixed(4) + ')';
+
+    /* 大标题：p 0.20 起快速淡出上浮，0.48 前退场干净，避免长时间"残影" */
+    var tp = smoothstep(0.20, 0.48, p);
+    title.style.opacity = (1 - tp).toFixed(3);
+    title.style.transform = 'translate3d(0,' + (-30 * tp).toFixed(1) + 'px,0) scale(' + (1 + 0.06 * tp).toFixed(3) + ')';
+
+    /* 下划提示：一开滑就消失 */
+    hint.style.opacity = (1 - smoothstep(0, 0.10, p)).toFixed(3);
+
+    /* 品牌顶栏：开屏隐藏，滑到中段淡入并轻微下移复位 */
+    var bp = smoothstep(0.42, 0.68, p);
+    top.style.opacity = bp.toFixed(3);
+    top.style.transform = 'translate3d(0,' + (-10 * (1 - bp)).toFixed(1) + 'px,0)';
+
+    /* 压暗层 + 副文案：后半程淡入 */
+    var op = smoothstep(0.52, 0.88, p);
+    over.style.opacity = op.toFixed(3);
+    over.style.transform = 'translate3d(0,' + (18 * (1 - op)).toFixed(1) + 'px,0)';
+    scrim.style.opacity = (0.90 * op).toFixed(3);
+  }
+
+  /* 阻尼跟随，滚动停止后自动收尾停机，避免空转耗电 */
+  function tick(ts){
+    if(!last) last = ts;
+    var dt = Math.min(64, ts - last); last = ts;
+    cur += (target - cur) * (1 - Math.exp(-dt / 110));
+    if(Math.abs(target - cur) < 0.0006) cur = target;
+    apply(cur);
+    if(cur === target){ running = false; last = 0; return; }
+    requestAnimationFrame(tick);
+  }
+
+  function sync(){
+    target = readProgress();
+    if(!running){ running = true; last = 0; requestAnimationFrame(tick); }
+  }
+
+  /* 首帧直接就位，不要一进页面就播一遍动画 */
+  cur = target = readProgress();
+  apply(cur);
+
+  window.addEventListener('scroll', sync, {passive:true});
+  window.addEventListener('resize', sync);
+  window.addEventListener('orientationchange', sync);
+  window.addEventListener('load', sync);
+  window.addEventListener('pageshow', sync);
+})();
+
+
+/* ---------- 图片缺失 -> 占位框 ---------- */
+function imgFail(img){
+  img.style.display = 'none';
+  var box = img.closest('.media');
+  if(box) box.classList.add('is-missing');
+}
+
+/* ---------- 滚动入场 ---------- */
+(function(){
+  var els = document.querySelectorAll('.rise');
+  if(!els.length) return;
+  if(!('IntersectionObserver' in window)){
+    for(var i=0;i<els.length;i++) els[i].classList.add('in');
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  },{rootMargin:'0px 0px -6% 0px',threshold:0.05});
+  for(var j=0;j<els.length;j++) io.observe(els[j]);
+})();
+
+/* ---------- 点击看大图 ---------- */
+(function(){
+  var lb = document.getElementById('lb'), li = document.getElementById('lbimg'), lc = document.getElementById('lbcap');
+  document.querySelectorAll('.media').forEach(function(box){
+    box.addEventListener('click', function(){
+      if(box.classList.contains('is-missing')) return;
+      var img = box.querySelector('img');
+      if(!img) return;
+      li.src = img.src;
+      var cap = '';
+      var fc = box.parentNode.querySelector('.figcap');
+      if(fc) cap = fc.textContent.trim();
+      if(!cap && box.closest){
+        var unit = box.closest('.unit');
+        var ut = unit && unit.querySelector('.unit-tt');
+        if(ut) cap = ut.textContent.trim();
+      }
+      if(!cap){
+        var bt = box.parentNode.querySelector('.bc-tag') || box.querySelector('.bc-tag');
+        cap = bt ? bt.textContent.trim() : '';
+      }
+      lc.textContent = cap;
+      lb.classList.add('on');
+    });
+  });
+  var lbx = document.getElementById('lbx');
+  var close = function(){ lb.classList.remove('on'); li.src = ''; };
+  if(lbx) lbx.addEventListener('click', function(e){ e.stopPropagation(); close(); });
+  lb.addEventListener('click', function(e){ if(e.target === li) return; close(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
+
+  /* 横向拖动图册时不要顺带打开大图：拖动距离超过 8px 就吃掉这次 click */
+  document.querySelectorAll('.gal-track').forEach(function(tr){
+    var sx = 0, sy = 0, moved = false;
+    tr.addEventListener('touchstart', function(e){
+      var t = e.touches[0]; sx = t.clientX; sy = t.clientY; moved = false;
+    }, {passive:true});
+    tr.addEventListener('touchmove', function(e){
+      var t = e.touches[0];
+      if(Math.abs(t.clientX - sx) > 8 || Math.abs(t.clientY - sy) > 8) moved = true;
+    }, {passive:true});
+    tr.addEventListener('click', function(e){
+      if(moved){ e.stopPropagation(); e.preventDefault(); moved = false; }
+    }, true);
+  });
+})();
+
+/* ---------- 分支图册：每个分支独立轮播（自动生成页码与圆点） ---------- */
+(function(){
+  var gals = document.querySelectorAll('.unit .gal');
+  if(!gals.length) return;
+
+  gals.forEach(function(gal){
+    var track = gal.querySelector('.gal-track');
+    var slides = gal.querySelectorAll('.gal-slide');
+    if(!track || !slides.length) return;
+    var total = slides.length;
+    if(total < 2) return;                 /* 只有一张图时不做轮播装饰 */
+
+    /* 图上页码 1/3 */
+    slides.forEach(function(s, i){
+      var tag = document.createElement('span');
+      tag.className = 'gal-idx';
+      tag.textContent = (i + 1) + '/' + total;
+      s.appendChild(tag);
+    });
+
+    /* 圆点 */
+    var dots = document.createElement('div');
+    dots.className = 'gal-dots';
+    var dotsArr = [];
+    for(var k = 0; k < total; k++){
+      var d = document.createElement('i');
+      d.className = 'gal-dot' + (k === 0 ? ' on' : '');
+      dots.appendChild(d); dotsArr.push(d);
+    }
+    gal.appendChild(dots);
+
+    var cur = -1;
+    var onScroll = function(){
+      var idx = Math.round(track.scrollLeft / (track.clientWidth + 9));
+      if(idx < 0) idx = 0;
+      if(idx > total - 1) idx = total - 1;
+      if(idx === cur) return;
+      cur = idx;
+      for(var i = 0; i < dotsArr.length; i++){
+        dotsArr[i].classList.toggle('on', i === idx);
+      }
+    };
+
+    track.addEventListener('scroll', onScroll, {passive:true});
+    window.addEventListener('resize', function(){ cur = -1; onScroll(); });
+    onScroll();
+  });
+})();
+
+/* ---------- 复制微信号 ---------- */
+function copyWx(){
+  var t = document.getElementById('wxid').textContent.trim();
+  var done = function(){ var el=document.getElementById('toast'); el.classList.add('on');
+    setTimeout(function(){el.classList.remove('on')},1600); };
+  if (navigator.clipboard && window.isSecureContext){
+    navigator.clipboard.writeText(t).then(done).catch(function(){ fallback(t,done); });
+  } else { fallback(t,done); }
+}
+function fallback(t,cb){
+  var a=document.createElement('textarea'); a.value=t;
+  a.style.cssText='position:fixed;opacity:0'; document.body.appendChild(a); a.select();
+  try{document.execCommand('copy');}catch(e){}
+  document.body.removeChild(a); cb();
+}
+</script>
+
+
+
+<script defer="" src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" data-page-node-id="JJUb0KtyiIE9qMR8FzqRjb"></script>
+<script defer="" src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" data-page-node-id="LCsDnegpfHBYKb8FbbuYD5"></script>
+<script data-page-node-id="2I8ja8WEFAcD1x3pNteP7O">
+/* ---------- 高级动效：GSAP + ScrollTrigger（不可用时静默回退 .rise） ---------- */
+(function(){
+  function init(){
+    if(window.__NO_ANIM__) return;
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if(!window.gsap || !window.ScrollTrigger) return;   /* CDN 失败 -> .rise 兜底 */
+    var g = window.gsap;
+    g.registerPlugin(ScrollTrigger);
+    document.documentElement.classList.add('gx');
+    ScrollTrigger.config({ignoreMobileResize:true});
+    setTimeout(function(){ var b=document.querySelector('.boot'); if(b) b.style.display='none'; },4000);
+    try{
+
+    /* —— 开场：夜幕揭开 + 标题压缩后归位 —— */
+    g.timeline({defaults:{ease:'power4.out'}})
+      .to('.boot',{autoAlpha:0,duration:.9,ease:'power2.inOut'},.15)
+      .set('.boot',{display:'none'})
+      .from('#hsTitle span',{yPercent:130,scaleX:.9,scaleY:1.1,transformOrigin:'50% 70%',duration:1.3},.5)
+      .fromTo('#hsHint',{y:16,autoAlpha:0},{y:0,autoAlpha:1,duration:.8},'-=0.85');
+
+    /* —— 板块大标题：序号弹入 / 标题遮罩揭开 / 金线拉开 / 英文角标滑入 —— */
+    g.utils.toArray('.sec').forEach(function(sec){
+      var sh = sec.querySelector('.sh'); if(!sh) return;
+      g.timeline({scrollTrigger:{trigger:sec,start:'top 80%',once:true},
+        defaults:{ease:'power4.out'}})
+        .from(sh.querySelector('.sh-num'),{scale:0,rotate:-10,duration:.65},0)
+        .from(sh.querySelector('h2'),{y:46,clipPath:'inset(0% 0% 100% 0%)',duration:1.05},.06)
+        .from(sh.querySelector('.sh-rule'),{scaleX:0,transformOrigin:'0% 50%',duration:1,ease:'power3.inOut'},.12)
+        .from(sh.querySelector('.sh-en'),{x:26,autoAlpha:0,duration:.9},.22);
+    });
+
+    /* —— 卡片 stagger 进场 —— */
+    var cards = '.sec .card, .sec .unit, .qrwrap, .stats > *, footer';
+    g.set(cards,{opacity:0,y:58});
+    ScrollTrigger.batch(cards,{start:'top 90%',once:true,onEnter:function(b){
+      g.to(b,{opacity:1,y:0,duration:1.15,ease:'power4.out',stagger:.12,overwrite:true});
+    }});
+
+    /* —— 图片 reveal：遮罩揭开 + 微缩放归位（只动 transform/clip-path，一次性触发） —— */
+    g.set('.media',{clipPath:'inset(14% 8% 86% 8% round 18px)'});
+    g.set('.media img',{scale:1.16,transformOrigin:'50% 50%'});
+    ScrollTrigger.batch('.media',{start:'top 92%',once:true,onEnter:function(batch){
+      for(var i=0;i<batch.length;i++){
+        (function(el,d){
+          g.to(el,{clipPath:'inset(0% 0% 0% 0% round 14px)',duration:1.2,ease:'power3.out',delay:d,overwrite:true});
+          var im = el.querySelector('img');
+          if(im) g.to(im,{scale:1,duration:1.5,ease:'power3.out',delay:d,overwrite:true});
+        })(batch[i], i*0.06);
+      }
+    }});
+
+    window.addEventListener('load',function(){ScrollTrigger.refresh()});
+    }catch(err){   /* 任何异常 -> 清除全部隐藏状态，回退静态版 */
+      try{ g.set('.media, .media img, .sec .card, .sec .unit, .qrwrap, .stats > *, footer',{clearProps:'all'}); }catch(e2){}
+      var b=document.querySelector('.boot'); if(b) b.style.display='none';
+      document.documentElement.classList.remove('gx');
+    }
+  }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+</script>
+
+
+</body></html>
